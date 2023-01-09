@@ -1,0 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/rubik-distressed');
+
+h1 { color:rgb(89, 12, 89); 
+    font-size: 40px;
+    font-family: 'Rubik Distressed', sans-serif;
+    text-align: 'center';
+}

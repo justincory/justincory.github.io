@@ -1,5 +1,17 @@
+/*
+File Name: yoga.css
+Date: 01/11/23
+Programmer: Justin Cory
+*/
 @import url('https://fonts.cdnfonts.com/css/rubik-distressed');
 @import url('https://fonts.cdnfonts.com/css/brandford');
+
+nav { font-family: 'Rubik Distressed', sans-serif; padding: 1em; float: left; width: 160px; }
+nav ul { list-style-type: none; padding-left: 0; }
+nav a { text-decoration: none; display: block; text-align: center; background-color: #ffffff; border: 3px outset #ff0000; padding: 1em; margin-bottom: 1em; }
+nav a:link { color: #000000; }
+nav a:visited { color: #7e7e7e; }
+nav a:hover { color: #ff0000; border: 3px outset #333333; background-color: #333333; }
 
 h1 { 
     color:rgb(89, 12, 89); 
@@ -21,9 +33,11 @@ h2 {
     text-align: left;
     }
 .body {
-    width: 80%;
-    align: center;
     font-size: 20px;
     font-family: monospace;
-    text-align: left;
+    padding: 2em;
+}
+.gif {
+     float: left; margin-left: 4em; 
+     padding: 2em;
 }

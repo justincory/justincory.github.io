@@ -1,13 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/rubik-distressed');
 @import url('https://fonts.cdnfonts.com/css/brandford');
 
-h1 { color:rgb(89, 12, 89); 
+h1 { 
+    color:rgb(89, 12, 89); 
     font-size: 40px;
     font-family: 'Rubik Distressed', sans-serif;
     text-align: center;
 }
-h2 { color: slategray;
+h2 { 
+    color: slategray;
     font-size: 30px;
     font-family: 'Brandford', sans-serif;
     text-align: center;
+}
+.journal { 
+    width: 80%;
+    align: center;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: left;
+    }
+.body {
+    width: 80%;
+    align: center;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: left;
 }

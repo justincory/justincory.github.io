@@ -20,9 +20,14 @@ Programmer: Justin Cory
     padding-bottom: 2.5rem;    /* Footer height */
   }
 
+body {
+    margin: 0;
+}  
+
 nav {   font-family: 'Rubik Distressed', sans-serif; 
         padding-top: 1em;
         padding-bottom: 1em;
+        z-index:999;
         float: left;
         width: 160px; 
         position:fixed;
@@ -40,13 +45,9 @@ nav a {
         background-color: #ffffff; 
         border: 3px outset #ff0000; 
         padding: 1em; 
-        margin-bottom: 1em; 
-    }
-
-nav a:link { 
-        color: #000000;
-    }
-
+        margin-bottom: 1em;
+        color: #333; 
+}
 
 nav a:hover { 
         color: #ff0000; 
@@ -55,7 +56,7 @@ nav a:hover {
     }
 
 h1 { 
-    color:rgb(89, 12, 89); 
+    color:rgb(0, 0, 0); 
     font-size: 50px;
     font-family: 'Rubik Distressed', sans-serif;
     text-align: center;
@@ -73,8 +74,32 @@ h3 {
     font-size: 25px;
     font-family: 'Brandford', sans-serif;
     text-align: left;
-}
+} 
 
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../justincory.github.io/images/charlie-sunny.jpeg");
+    width: 100vw;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    white-space:nowrap;
+  }
+  
 .journal { 
     width: 80%;
     box-align: left;
@@ -118,7 +143,15 @@ h3 {
     font-size: 14px;
   }
 
+@media(max-width:1000px){
+    .gif {
+        float: center;
+        margin-top: 40px; 
+        margin-left: 0; 
+        padding: 0;
+   }
 
+}
 @media(max-width:600px){
     .gif {
         float: center; 
@@ -138,6 +171,38 @@ h3 {
         font-family: monospace;
         text-align: left;
         margin-top: 80px;
+    }
+    nav {   
+        padding: 0.5em;
+        display: inline;
+        width: 100%; 
+        position: fixed;
+        float: top;
+        top: 0; 
+        min-width: 6em; 
+        margin-left: 0.5em; 
+    }
+    
+    nav ul { 
+        list-style-type: none;
+        padding-left: 0;
+     }
+    
+    nav a { 
+        text-decoration: none; 
+        display: inline; 
+        text-align: center;
+        background-color: #ffffff; 
+        border: 0; 
+        padding: 0; 
+        margin-bottom: 0;
+        color: #333; 
+    }
+    
+    nav a:hover { 
+        color: none; 
+        border: none; 
+        background-color: none; 
     }
 }
 

@@ -79,7 +79,7 @@ h3 {
 } 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.65)), url("../justincory.github.io/images/charlie-sunny.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.65)), url("images/charlie-sunny.jpeg");
     width: 100vw;
     background-position: center center;
     background-repeat: no-repeat;

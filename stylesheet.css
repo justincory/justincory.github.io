@@ -18,7 +18,7 @@ Programmer: Justin Cory
   }
   
 #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
+    padding-bottom: 3rem;    /* Footer height */
   }
 
 body {
@@ -79,7 +79,7 @@ h3 {
 } 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../justincory.github.io/images/charlie-sunny.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.65)), url("../justincory.github.io/images/charlie-sunny.jpeg");
     width: 100vw;
     background-position: center center;
     background-repeat: no-repeat;
@@ -160,7 +160,6 @@ h3 {
         margin-left: 0; 
         padding: 0;
    }
-
 }
 @media(max-width:600px){
     .gif {

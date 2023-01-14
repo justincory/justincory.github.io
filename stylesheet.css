@@ -14,6 +14,7 @@ Programmer: Justin Cory
 #page-container {
     position: relative;
     min-height: 100vh;
+    padding-bottom: 50px;
   }
   
 #content-wrap {
@@ -43,7 +44,8 @@ nav a {
         display: block; 
         text-align: center;
         background-color: #ffffff; 
-        border: 3px outset #ff0000; 
+        border: 3px outset #ff0000;
+        border-left: 0px; 
         padding: 1em; 
         margin-bottom: 1em;
         color: #333; 
@@ -128,6 +130,14 @@ h3 {
     width: 33.3%;
     padding: 10px;
     box-sizing: border-box;
+}
+.week-2 {
+    margin-left: 4em;
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 1.6em;
+    float: center;
+    width: 100%;
 }
 
 #footer {

@@ -173,6 +173,12 @@ h3 {
         width: 80%;
         padding: 0;
    }
+   .week-2 {
+        float: left; 
+        margin-left: 2em; 
+        width: 80%;
+        padding: 0;
+}
    .journal { 
         width: 100%;
         box-align: left;

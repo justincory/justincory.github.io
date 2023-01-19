@@ -112,7 +112,9 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     }
-  
+.intro {
+    flex: 1;
+} 
 .journal { 
     width: 80%;
     box-align: left;

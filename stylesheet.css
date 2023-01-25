@@ -102,7 +102,8 @@ h3 {
 } 
 h4 {
     color: slategray;
-    font-size: 16px;font-style: italic;
+    font-size: 16px;
+    font-style: italic;
     text-decoration: dashed;
 }
 

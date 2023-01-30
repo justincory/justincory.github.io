@@ -1,0 +1,145 @@
+/*
+File Name: stylesheet.css
+Date: 01/30/23
+Programmer: Justin Cory
+*/
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+/* 
+--COLOR PALETTE--
+Primary: #F1EDD7; 
+Background: #1F1F1F;
+Body Text: #F2F2F2;
+*/
+* {
+    box-sizing: border-box;
+}
+body { 
+    margin: 0;
+    background: #1F1F1F;
+    height:100vh;
+    width: 100vw;
+}
+h1 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 220px;
+    color: #F1EDD7;
+}
+h2 {
+    font-family: 'Cormorant', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 92px;
+    color: #F1EDD7;
+}
+h3 {
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 51px;
+    color: #F1EDD7;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #F1EDD7;
+}
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F2F2F2;
+}
+p {
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 128%;
+    color: #F2F2F2;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: #F2F2F2;
+}
+a:active {
+    text-decoration: overline underline 1px solid #F1EDD7;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+nav li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+.vert-lines {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:100px;
+    right:100px;
+    width:calc(100vw - 200px);
+    height:100vh;
+    border:0;
+    border-left:1px solid #F1EDD7;
+    border-right:1px solid #F1EDD7;
+}
+.horiz-lines {
+    position:fixed;
+    top:100px;
+    bottom:100px;
+    left:0;
+    right:0;
+    width:100vw;
+    height:calc(100vh - 200px);
+    border:0;
+    border-top:1px solid #F1EDD7;
+    border-bottom:1px solid #F1EDD7;
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+.title {
+    flex: 1;
+}
+.arc-img {
+    flex: 1;
+}
+.icon {
+    position: fixed;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    background:#F1EDD7;
+}
+.icon.top-left {
+    top:15px;
+    left:15px;
+}
+.icon.top-right {
+    top:15px;
+    right:15px;
+}
+.icon.bottom-left {
+    bottom:15px;
+    left:15px;
+}
+.icon.bottom-right {
+    bottom:15px;
+    right:15px;
+}

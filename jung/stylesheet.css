@@ -70,29 +70,20 @@ a {
 a:visited {
     color: #F2F2F2;
 }
-a:active {
+a:current {
     text-decoration: overline underline 1px solid #F1EDD7;
-
 }
+
 nav ul {
-    display: flex;
+    width: calc(100vw - 200px);
     list-style: none;
-    padding: 0;
     margin: auto;
-    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 nav li {
-    flex: 1;
-    text-align: center;
-    padding: 0;
-    z-index: 3;
-}
-.accent {
-    display: inline;
-}
-.subhead {
-    display: inline;
-    padding-left: 20px;
+    z-index: 999;
 }
 .vert-lines {
     position:fixed;
@@ -124,20 +115,32 @@ nav li {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 120px;
+    height: calc(100vh - 200px);
+    padding: 0 120px;
     align-items: center;
     justify-content: center;
     z-index: 2;
 }
 .title {
     flex: 1;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.accent {
+    flex: 1;
     justify-content: center;
 }
+.subhead {
+    padding-left: 30px;
+    padding-top: 100px;
+    justify-content: left;
+}  
 .arc-img {
-    flex: 1;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 .icon {
     position: fixed;

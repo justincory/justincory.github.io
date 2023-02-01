@@ -114,28 +114,30 @@ nav li {
 .intro {
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     height: calc(100vh - 200px);
     padding: 0 120px;
-    align-items: center;
     justify-content: center;
     z-index: 2;
+}
+.intro-copy {
+    width: 500px;
+    position: absolute;
+    padding-top: 550px;
+    padding-left: 60px;
 }
 .title {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 50px;
 }
 .accent {
-    flex: 1;
     justify-content: center;
 }
 .subhead {
-    padding-left: 30px;
-    padding-top: 100px;
-    justify-content: left;
+    padding-left: 20px;
+    padding-top: 80px;
+    justify-content: center;
 }  
 .arc-img {
     align-items: center;

@@ -75,21 +75,21 @@ a:visited {
 a:current {
   text-decoration: overline underline 1px solid #f1edd7;
 }
-nav {
-  height: 100px;
-}
 nav ul {
   position: fixed;
+  height: 100px;
   left: 100px;
   right: 100px;
   top: 0px;
-  width: calc(100vw - 200px);
+  width: calc(100vw - 202px);
   padding-left: 30px;
   padding-right: 30px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  z-index: 999;
+  background: #1f1f1f;
 }
 nav a {
   display: inline-block;
@@ -134,9 +134,9 @@ nav li {
   margin: auto;
   display: flex;
   height: calc(100vh - 200px);
-  padding: 0 120px;
+  padding: 100px 120px;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 }
 .left {
   padding-left: 40px;
@@ -163,12 +163,13 @@ nav li {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  height: 50%;
 }
 .ovals {
   display: flex;
   width: 60%;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 400px;
   padding-bottom: 200px;
 }
 .ovals img {
@@ -185,6 +186,9 @@ nav li {
   justify-content: center;
   z-index: 9;
 }
+
+/* corner icon svg styling*/
+
 .icon {
   position: fixed;
   width: 70px;
@@ -207,7 +211,35 @@ nav li {
   bottom: 15px;
   right: 15px;
 }
+
+/* self page styling*/
+
+.self-intro {
+  margin: auto;
+  padding: 120px 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.self-intro img {
+  z-index: 14;
+}
+.self-intro p {
+  display: flex;
+}
+
 footer {
-  height: 72px;
+  height: 100px;
+}
+.footer {
+  display: flex;
   padding-left: 130px;
+  padding-right: 130px;
+}
+.foot-left {
+  flex:1; 
+  padding-bottom: 50px;
+}
+.foot-right {
+  text-align: right;
 }

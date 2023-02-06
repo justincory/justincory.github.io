@@ -89,7 +89,8 @@ nav ul {
   justify-content: space-between;
   margin: auto;
   z-index: 999;
-  background: #1f1f1f;
+  /* nav with background 
+  background: #1f1f1f; */
 }
 nav a {
   display: inline-block;
@@ -173,7 +174,8 @@ nav li {
   padding-bottom: 200px;
 }
 .ovals img {
-  width: 200%;
+  width: 150%;
+  justify-content: center;
 }
 
 .card img {
@@ -184,7 +186,18 @@ nav li {
   flex: 1;
   display: flex;
   justify-content: center;
+}
+.card .self {
   z-index: 9;
+}
+.card .persona {
+  z-index: 8;
+}
+.card .shadow {
+  z-index: 7;
+}
+.card .anima {
+  z-index: 6;
 }
 
 /* corner icon svg styling*/
@@ -197,36 +210,67 @@ nav li {
 .icon.top-left {
   top: 13px;
   left: 3px;
-  z-index: 4;
+  z-index: 15;
 }
 .icon.top-right {
   top: 15px;
   right: 15px;
+  z-index: 15;
 }
 .icon.bottom-left {
   bottom: 15px;
   left: 15px;
+  z-index: 15;
 }
 .icon.bottom-right {
   bottom: 15px;
   right: 15px;
+  z-index: 15;
 }
 
-/* self page styling*/
+/* subpage intro styling */
 
 .self-intro {
+  position: relative;
+  text-align: center;
   margin: auto;
   padding: 120px 120px;
   align-items: center;
   justify-content: center;
-  display: flex;
 }
 .self-intro img {
   z-index: 14;
+  width: 85%;
+  height: auto;
 }
-.self-intro p {
-  display: flex;
+
+/* centered text */
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  z-index: 15;
 }
+.centered-text-self {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  z-index: 15;
+}
+.centered-text-shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: 15;
+}
+/* footer styling */
 
 footer {
   height: 100px;

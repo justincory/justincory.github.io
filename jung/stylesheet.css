@@ -68,7 +68,10 @@ p {
   line-height: 128%;
   color: #f2f2f2;
 }
-
+.current-page {
+  text-decoration: overline underline solid #f1edd7;
+  text-underline-offset: .25em;  
+}
 a:hover{
   cursor: url("./images/cursor-stars-hover.png"), auto;
 }
@@ -96,9 +99,8 @@ nav ul {
   justify-content: space-between;
   margin: auto;
   z-index: 999;
-
-  /* nav with background 
-  background: #1f1f1f; */
+  /* nav background */
+  background: rgba(31,31,31,.65)
 }
 nav a {
   display: inline-block;

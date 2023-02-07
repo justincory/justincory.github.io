@@ -19,6 +19,8 @@ body {
   background: #1f1f1f;
   height: 100vh;
   width: 100vw;
+  /* cursor styling */
+  cursor: url("./images/cursor-stars.png"), auto;
 }
 h1 {
   font-family: 'Cormorant', serif;
@@ -66,6 +68,11 @@ p {
   line-height: 128%;
   color: #f2f2f2;
 }
+
+a:hover{
+  cursor: url("./images/cursor-stars-hover.png"), auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,6 +96,7 @@ nav ul {
   justify-content: space-between;
   margin: auto;
   z-index: 999;
+
   /* nav with background 
   background: #1f1f1f; */
 }
@@ -269,6 +277,14 @@ nav li {
   transform: translate(-50%, -50%);
   width: 30%;
   z-index: 15;
+}
+.centered-text-anima {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: 15; 
 }
 /* footer styling */
 

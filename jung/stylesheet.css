@@ -365,6 +365,15 @@ footer {
     position: fixed;
     scale: .85;
 }
+  .icon.bottom-left {
+    display: none;
+  }
+  .icon.top-right {
+    display: none;
+  }
+  .icon.bottom-right {
+    display: none;
+  }
 .vert-lines {
   display: none;
 }
@@ -373,5 +382,8 @@ footer {
 }
 .img-subpage {
   display: none;
+}
+.footer {
+  bottom:0;
 }
 }

@@ -275,7 +275,7 @@ img {
 }
 .centered-text-self {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
@@ -291,10 +291,10 @@ img {
 }
 .centered-text-anima {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 35%;
   z-index: 15; 
 }
 /* footer styling */
@@ -369,6 +369,9 @@ footer {
   display: none;
 }
 .horiz-lines {
+  display: none;
+}
+.img-subpage {
   display: none;
 }
 }

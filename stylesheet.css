@@ -14,7 +14,7 @@ body {
 }
 img {
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 
@@ -183,12 +183,13 @@ h4 {
 .right-journal {
     padding: 2em;
     flex: 1;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .card { 
     flex:33.3%;
     padding: 5px;
+    object-fit: cover;
 }
 
 #footer {

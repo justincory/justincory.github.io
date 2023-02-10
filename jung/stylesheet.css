@@ -150,11 +150,13 @@ img {
 }
 .intro {
   margin: auto;
+  margin-top: 150px;
   display: flex;
   height: calc(100vh - 200px);
   padding: 100px 120px;
   justify-content: center;
   z-index: 3;
+  align-items: center;
 }
 .left {
   flex: 1;
@@ -184,6 +186,7 @@ img {
   justify-content: center;
 }
 .arc-img {
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
@@ -193,7 +196,7 @@ img {
   width: 60%;
   /* turned off margin: auto; to the img width overlap to center the offset cards*/
   margin-left: 16%;
-  padding-top: 400px;
+  padding-top: 300px;
   padding-bottom: 150px;
 }
 .ovals img {
@@ -278,6 +281,8 @@ img {
 }
 .centered-text-self {
   position: absolute;
+  overflow: scroll;
+  max-height: 40vh;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -294,7 +299,9 @@ img {
 }
 .centered-text-anima {
   position: absolute;
-  top: 60%;
+  top: 55%;
+  overflow: scroll;
+  max-height: 40vh;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
@@ -388,5 +395,13 @@ footer {
 }
 .footer {
   bottom:0;
+}
+.centered-text-anima {
+  overflow: visible;
+  max-height: 100vh;
+}
+.centered-text-self {
+  overflow: visible;
+  max-height: 100vh;
 }
 }

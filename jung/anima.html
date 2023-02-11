@@ -59,6 +59,21 @@
         </p>
         <img src="images/anima-frame-3.png" class="img-subpage" alt="Jung mandala painting cropped as a frame with moon and stars on the left and a sun burst on the right">
       </div>
+      <h2 class="page-title">anima &amp; animus</h2>
+      <section class="ovals">
+        <div class="card self">
+          <a href="#"><img src="images/anima-oval-1.png" alt="Jung quote: every personification of the unconscious—the shadow, the anima, the animus, and the Self—has both a light and a dark aspect."/></a>
+        </div>
+        <div class="card persona">
+          <a href="https://www.youtube.com/watch?v=IW4GzhdVr-w" target="_blank"><img src="images/anima-oval-video.png" alt="Link you a YouTube video about anima/animus with an image of an anima mandala painting"/></a>
+        </div>
+        <div class="card shadow">
+          <a href="#"><img src="images/anima-oval-2.png" alt="Jung quote: it is practically impossible to get a man who is afraid of his own femininity to understand what is meant by the anima."/></a>
+        </div>
+        <div class="card anima">
+          <a href="https://appliedjung.com/the-archetypes-of-the-anima-and-animus/" target="_blank"><img src="images/anima-oval.png" alt="Link to further Jungian archetypal context and an image of an anima/animus oval mandala painting"/></a>
+        </div>
+      </section> 
       <footer class="footer">
         <h5 class="foot-left">
           4 Archetypes of CG Jung<br/>
@@ -69,5 +84,18 @@
           by CG Jung
         </h5>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+      $('.card').mouseenter(function () {
+        $(this).find('img').css('filter', 'grayscale(0%)')
+        $(this).css('z-index', '11')
+        $('.card').not(this).css('z-index', '10')
+      })
+
+      $('.card').mouseleave(function () {
+        $(this).find('img').css('filter', 'grayscale(100%)')
+        $(this).css('z-index', '10')
+      })
+    </script>
 </body>
 </html>

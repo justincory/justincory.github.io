@@ -153,7 +153,7 @@ img {
   margin-top: 150px;
   display: flex;
   height: calc(100vh - 200px);
-  padding: 100px 120px;
+  padding: 100px 100px 200px 120px;
   justify-content: center;
   z-index: 3;
   align-items: center;
@@ -191,12 +191,17 @@ img {
   justify-content: center;
   padding-top: 20px;
 }
+.page-title {
+  padding-top: 100px;
+  text-align: center;
+  margin: auto;
+}
 .ovals {
   display: flex;
   width: 60%;
   /* turned off margin: auto; to the img width overlap to center the offset cards*/
   margin-left: 16%;
-  padding-top: 300px;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 .ovals img {
@@ -261,7 +266,7 @@ img {
   padding: 120px 120px;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 }
 .self-intro img {
   z-index: 14;
@@ -283,7 +288,7 @@ img {
   position: absolute;
   overflow: scroll;
   max-height: 40vh;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
@@ -291,7 +296,7 @@ img {
 }
 .centered-text-shadow {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
@@ -299,7 +304,7 @@ img {
 }
 .centered-text-anima {
   position: absolute;
-  top: 55%;
+  top: 65%;
   overflow: scroll;
   max-height: 40vh;
   left: 50%;
@@ -435,37 +440,61 @@ svg {
   display: none;
 }
 .img-subpage {
-  display: inline-block;
+  padding-top: 150px;
+  position: relative;
+  opacity: 30%;
 }
 .footer {
-  bottom:0;
+   position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.self-intro {
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 500px;
+  padding: 0;
 }
 .centered-text-anima {
   overflow: visible;
-  max-height: 80vh;
+  max-height: 100vh;
   width: 60vw;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .centered-text-self {
   overflow: visible;
   max-height: 100vh;
   width: 60vw;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .centered-text-shadow {
   overflow: visible;
   max-height: 100vh;
   width: 60vw;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 .centered-text-persona {
   overflow: visible;
   max-height: 100vh;
   width: 60vw;
   margin: auto;
-  padding-top: 400px;
+  padding-top: 100px;
+}
+.ovals {
+  display: flex;
+  width: 60%;
+  /* turned off margin: auto; to the img width overlap to center the offset cards*/
+  margin-left: 16%;
+  position: absolute;
+  padding-top: 1000px;
+  padding-bottom: 150px;
 }
 }

@@ -214,19 +214,19 @@ img {
 }
 .card-overlay {
   position: absolute;
-  top: 0;
+  top: 45%;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 156%;
   height: 10%;
-  background: rgba(0,0,0,.6);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  background: rgba(31,31,31,.65);
 }
 
-.card-overlay:hover {
+.card:hover .card-overlay {
   opacity: 1;
 }
 

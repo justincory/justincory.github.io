@@ -190,6 +190,7 @@ img {
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  width: 50%;
 }
 .page-title {
   padding-top: 100px;
@@ -348,49 +349,6 @@ footer {
 .foot-right {
   text-align: right;
 }
-
-/* css animations */
-
-.pathed svg path d {fill: #f1edd7;
-}
-
-.pathed {
-  offset-path: path('M71.529 262.575C18.4824 320.514 -9.6079 366.688 2.98403 381.649C23.1176 405.572 139.634 340.64 263.23 236.62C386.827 132.6 470.7 28.8821 450.566 4.95944C441.431 -5.89483 412.454 1.5429 371.977 22.6242C372.388 23.1609 372.796 23.7002 373.201 24.2418C391.177 14.8968 406.791 8.30173 419.324 4.82736C427.062 2.68226 433.51 1.75993 438.557 2.05293C443.604 2.34592 447.004 3.83239 449.036 6.24726C451.068 8.66214 451.952 12.266 451.379 17.2889C450.806 22.3118 448.796 28.5076 445.362 35.7654C438.498 50.2691 426.152 68.5845 409.242 89.4957C375.443 131.292 323.673 183.136 261.942 235.09C200.211 287.044 140.289 329.2 93.3349 355.366C69.8434 368.458 49.689 377.495 34.2263 381.781C26.4886 383.927 20.0406 384.849 14.9935 384.556C9.94659 384.263 6.54661 382.776 4.51423 380.362C2.48184 377.947 1.59776 374.343 2.17081 369.32C2.74391 364.297 4.75367 358.101 8.18849 350.843C15.0524 336.34 27.3983 318.024 44.3084 297.113C52.3909 287.118 61.5009 276.549 71.529 265.541V262.575Z');
-  position: absolute;
-  animation: distance 4000ms infinite ease-in-out;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 5px;
-  height: 5px;
-  border: none;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  fill: none;
-}
-@keyframes distance {
-  100% {
-    offset-distance: 100%;
-  }
-}
-code {
-  position: absolute;
-  top: 100px;
-  right: 10px;
-  left: 10px;
-  line-height: 1.5; 
-}
-section {
-  position: relative;
-}
-
-svg {
-  position: absolute;
-  opacity:inherit;
-  stroke-width: 1px;
-}
-
 
 /* media querries */
 

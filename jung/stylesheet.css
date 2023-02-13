@@ -212,9 +212,22 @@ img {
   filter: grayscale(100%);
   transition: 500ms;
 }
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  background: rgba(0,0,0,.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+
 .card {
   flex: 1;
   display: flex;
+  position: relative;
 }
 .card .self {
   z-index: 9;

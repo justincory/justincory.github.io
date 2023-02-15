@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="self.html">SELF</a></li>
-        <li><a href="persona.html">PERSONA</a></li>
-        <li><a href="shadow.html">SHADOW</a></li>
-        <li><a href="anima.html">ANIMA/ANIMUS</a></li>
-      </ul>
-    </nav>
+    <header class="hamburger-nav">
+      <nav class="nav">
+        <div class="burger">
+          <div class="hamburger"></div>
+        </div>
+        <div class="menu-mobile">
+            <a href="self.html">SELF</a>
+            <a href="persona.html">PERSONA</a>
+            <a href="shadow.html">SHADOW</a>
+            <a href="anima.html">ANIMA/ANIMUS</a>
+        </div>
+      </nav>
+      <nav class="desktop">
+        <div class="menu-desktop">
+          <ul>
+            <li><a href="self.html">SELF</a></li>
+            <li><a href="persona.html">PERSONA</a></li>
+            <li><a href="shadow.html">SHADOW</a></li>
+            <li><a href="anima.html">ANIMA/ANIMUS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="icon top-left">
       <a href="index.html"
         ><svg width="95" height="74" viewBox="0 0 95 84" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,5 +110,7 @@
         $(this).css('z-index', '10')
       })
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

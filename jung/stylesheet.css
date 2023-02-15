@@ -399,7 +399,7 @@ nav li {
   .burger {
     position: fixed;
     cursor: pointer;
-    top: 7%;
+    top: 6%;
     right: 0%;
     width: 50px;
     height: 50px;
@@ -535,9 +535,6 @@ nav li {
   h5 {
     scale: .8;
   }
-  .footer {
-    padding:0;
-  }
   .icon {
     position: fixed;
     scale: .85;
@@ -566,7 +563,8 @@ nav li {
   opacity: 30%;
 }
 .footer {
-  position:relative;
+  padding: 0;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -624,6 +622,7 @@ nav li {
   margin-left: 16%;
   position: absolute;
   padding-top: 700px;
-  padding-bottom: 150px;
+  padding-bottom: 300px;
+  z-index: 1;
 }
 }

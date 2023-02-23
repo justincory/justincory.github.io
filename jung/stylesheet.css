@@ -251,7 +251,6 @@ img {
 /* mobile ovals styling */
 .ovals-mobile {
   padding-top: 100px;
-  padding-bottom: 50px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -579,11 +578,6 @@ nav li {
    .intro {
     display: none;
   }
-  .self-intro {
-    flex-direction: column-reverse;
-    margin: auto;
-    padding-top: 100px;
-  }
   .left {
     display: none;
   }
@@ -649,13 +643,7 @@ nav li {
     display: none;
 }
 .self-intro {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  display: none;
 }
 .centered-text{
   position: relative;

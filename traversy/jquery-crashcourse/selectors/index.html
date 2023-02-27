@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery crash course | selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+        body {
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5rem;
+        }
+        header { 
+            background: #333;
+            color:#fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        #container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>jQuery Crash Course</h1>
+    </header> 
+            <div id="container">
+                <h1 id="heading1">Heading One</h1> 
+                <p id="para1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum a, laboriosam cupiditate rem repellat aliquam, <span>at veniam sunt deleniti atque quas</span>? Doloremque quaerat minima sed!
+                </p>
+                <h1 class="heading2">Heading Two</h1> 
+                <p class="para2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum a, laboriosam cupiditate rem repellat aliquam, <span>at veniam sunt deleniti atque quas</span>? Doloremque quaerat minima sed!
+                </p>
+                <ul id="list">
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                    <li>List Item</li>
+                </ul>
+                <input type="button" value="Button 1">
+                <input type="submit" value="Button 1">
+                <input type="text">
+                <a href="http://google.com">Google</a>
+                <a href="http://yahoo.com">Yahoo</a>
+
+                <h3>Mouse Events</h3>
+                <button id="btn1">Button 1</button>
+                <button id="btn2">Button 2</button>
+                <h1 id="coords"></h1>
+                <hr>
+                    <form id="form">
+                        <label>Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label>Email</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label>Gender</label><br>
+                        <select id="gender" name="gender">
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="nonbinary">Nonbinary</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+             </div>
+<script>
+    $(document).ready(function(){
+        //$('h1').hide();
+        //$('h1.heading2').hide();
+        //$('p span').css('color', 'red');
+        //$('ul#list li:first').css('color', 'red');
+        //$('ul#list li:last').css('color', 'green');
+        //$('ul#list li:even').css('background-color', 'yellow');
+        //$('ul#list li:odd').css('background-color', '#ccc');
+        //$('ul#list li:nth-child(3n)').css('list-style', 'none');
+        //$(':button').hide();
+        //$('[href]').css('color', 'red');
+        //$('a[href="http://yahoo.com"]').css('color', 'green');
+        //$('*').hide(); 
+        /*$('#btn1').click(function(){
+            alert('Button Clicked!');
+        })
+
+        $('#btn1').on('click', function(){
+            alert('Button Clicked!');
+        })
+        */
+        /*$('#btn1').on('click', function(){
+            //$('.para2').hide();
+            $('.para2').toggle();
+        })
+        $('#btn2').on('click', function(){
+            $('.para2').show();
+        })
+        */ 
+        /*$('#btn1').dblclick(function(){
+            $('.para2').toggle();
+        });
+        $('#btn1').hover(function(){
+            $('.para2').toggle();
+        });
+        */
+        /*$('#btn1').on('mouseenter', function(){
+            $('.para2').toggle();
+        });
+        $('#btn1').on('mouseleave', function(){
+            $('.para2').toggle();
+        });
+        */ 
+        /*
+        $('#btn1').on('mousemove', function(){
+            $('.para2').toggle();
+        });
+        */ 
+        /*
+        $('#btn1').on('mousedown', function(){
+            $('.para2').toggle();
+        });
+        $('#btn1').on('mouseup', function(){
+            $('.para2').toggle();
+        */
+        /*$('#btn1').click(function(e){
+            //alert(e.currentTarget.id);
+            //alert(e.currentTarget.innerHTML);
+        })
+        */
+        $(document).on('mousemove', function(e){
+           $('#coords').html('Coords Y: '+e.clientY+" X: "+e.clientX);
+        });
+        /*
+        $('input').focus(function(){
+            alert('Focus');
+        })*/ 
+        $('input').focus(function(){
+            $(this).css('background', 'pink');
+        });
+        $('input').blur(function(){
+            $(this).css('background', 'white');
+        });
+        $('select#gender').change(function(e){
+            alert(e.target.value);
+        });
+        $('#form').submit(function(){
+                e.preventDefault();
+                console.log('Submitted');
+        });
+    });
+
+</script>
+</body>
+</html>

@@ -101,6 +101,12 @@ h4 {
 p {
     font-family: "Aeonik", sans-serif;
     font-size: 20px;
+    color:#B1D5B6; 
+}
+blockquote {
+    font-family: "Wilden", sans-serif;
+    font-size: 25px;
+    color: #B1D5B6;  
 }
 img { 
     width: 100%;
@@ -174,7 +180,7 @@ a:visited {
 .nav-grid {
     display: grid; 
     grid-template-rows: 1;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
     gap: 5px;
     height: 100px;
     padding-bottom: 20px;
@@ -187,7 +193,7 @@ a:visited {
     grid-row-end: 2;
     grid-column-end: 2;
     margin: auto;
-    align-items: center;
+    place-self: center;
  }
  #item-1 {
     grid-row-start: 1;
@@ -213,6 +219,23 @@ a:visited {
     grid-row-end: 2;
     grid-column-end: 7;  
  }
-.switch {
+ #item-5 {
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-row-end: 2;
+    grid-column-end: 9;  
+    place-self: center;
+ }
+
+#switch {
     width: 50%;
+}
+#meter {
+    width: 60%;
+}
+#hero {
+    top: 500px;
+}
+#testimonial {
+    top: 500px;
 }

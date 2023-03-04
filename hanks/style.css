@@ -1,0 +1,218 @@
+/*
+File Name: stylesheet.css
+Date: 03/03/23
+Programmer: Justin Cory
+*/
+
+/* Fonts */
+@font-face {
+    font-family: "Data70";
+    src: url("fonts/Data-70-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Wilden";
+    src: url("fonts/Wilden.otf") format("opentype"),
+         url("fonts/Wilden.ttf");
+}
+@font-face {
+    font-family: "Aeonik";
+    src: url("fonts/Aeonik-Regular.otf") format("opentype");
+}
+/* --Color Palette-- 
+Primary: #B1D5B6; 
+Secondary: CB553C;
+Background: #000000;
+*/
+
+* {
+    box-sizing: border-box;
+  }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+body {
+    background: #000;
+    color: #B1D5B6;
+  }
+
+/* Typography Styling */
+h1 {
+    font-family: "Data70", monospace;
+    font-size: 67px;
+    color: #fff;
+}
+h2 {
+    font-family: "Wilden", sans-serif;
+    font-size: 39px;
+}
+h3 {
+    font-family: "Wilden", sans-serif;
+    font-size: 25px;
+}
+h4 { 
+    font-family: "Wilden", sans-serif;
+    font-size: 20px;
+}
+p {
+    font-family: "Aeonik", sans-serif;
+    font-size: 20px;
+}
+img { 
+    width: 100%;
+    height: auto;
+  }
+/* --Desktop Nav-- */ 
+nav {
+    background-image: url("images/metal-nav-bkgnd.png");
+    position: fixed;
+    height: 200px;
+    width: 100%;
+}
+nav a {
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+}
+nav ul {
+    font-family: "Wilden", sans-serif;
+    font-size: 20px;
+    color: #000;
+    position: fixed;
+    height: 100px;
+    left: 100px;
+    right: 100px;
+    top: 150px;
+    width: calc(100vw - 202px);
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.nav {
+    font-family: "Wilden", sans-serif;
+    font-size: 20px;
+    color: #000;
+    margin: auto;  
+}
+.frame {
+    position: absolute;
+    border-radius: 20px;
+    border: 2px solid #000;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    margin: auto;
+    width: 98%;
+    height: 180px;
+}
+.title {
+    margin-top: 5px;
+    font-family: "Data70", monospace;
+    font-size: 40px;
+    color: #000;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    scale: 1.1;
+  }
+a:visited {
+    color: #000;
+  }
+.nav-grid {
+    display: grid; 
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 100px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+#item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    margin: auto;
+    align-items: center;
+ }
+ #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;  
+ }
+ #item-2 {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 2;
+    grid-column-end: 5;  
+ }
+ #item-3 {
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 2;
+    grid-column-end: 6;  
+ }
+ #item-4 {
+    grid-row-start: 1;
+    grid-column-start: 6;
+    grid-row-end: 2;
+    grid-column-end: 7;  
+ }
+.switch {
+    width: 50%;
+}

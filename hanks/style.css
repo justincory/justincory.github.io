@@ -369,7 +369,9 @@ a:visited {
     from {stroke: #cb553c; }
     to {stroke: #B1D5B6;}
   }
- /* end of svg hero animation styling */ 
+ /* end of svg hero animation styling */
+ 
+  /* button styling */
 .two-buttons {
     padding-top: 20px;
     display: flex;
@@ -406,31 +408,95 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* marquee styling */
+.marquee {
+    padding-top: 50px;
+    height: 100px;
+}
+
+.cls-420 {
+    fill: #b1d5b6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 1s linear infinite;
+    -webkit-animation: scroll-left 1s linear infinite;
+    animation: scroll-left 5s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+ /* testimonial section styling */
 #testimonial {
     padding-top: 150px;
     width: 60%;
     margin: auto;
 }
+
+/* shop section styling */
 #shop {
     padding-top: 150px;
     width: 60%;
     margin: auto;
 }
+
+/* sell section styling */
 #sell {
     padding-top: 150px;
     width: 60%;
     margin: auto;
 }
+
+/* about section styling */
 #about {
     padding-top: 150px;
     width: 60%;
     margin: auto;
 }
+
+/* contact section styling */
 #contact {
     padding-top: 150px;
     width: 60%;
     margin: auto;
 }
+
+/* footer section styling */
 #footer {
     padding-top: 150px;
     width: 60%;

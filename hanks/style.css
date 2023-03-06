@@ -722,7 +722,9 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: auto;
 }
 .gear-filter {
+  border: 1px white solid;
   display: flex;
+  position: relative;
   justify-content: center;
 }
 .gear-selector {
@@ -739,6 +741,8 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 .guitar {
     position: absolute;
+    top: 10;
+    left: 10;
     color: #000;
     z-index: 4;
 }

@@ -503,6 +503,19 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.primary-button {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  color: #000;
+}
+.blk-button-text {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .secondary-button {
     position: relative;
     display: inline-block;
@@ -708,6 +721,52 @@ input[type=button], input[type=submit], input[type=reset] {
     width: 80%;
     margin: auto;
 }
+.gear-filter {
+  display: flex;
+  justify-content: center;
+}
+.gear-selector {
+    width: 60px;
+    position: absolute;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.gear-switch { 
+    width: 300px;
+    position: relative;
+}
+.guitar {
+    position: absolute;
+    color: #000;
+    z-index: 4;
+}
+.effects { 
+    position: absolute; 
+    color: #000;
+    z-index: 4;
+}
+.amps { 
+    position: absolute;
+    color: #000;
+    z-index: 4;
+}
+.bass {
+    position: absolute;
+    color: #000;
+    z-index: 4;
+}
+.accessories {
+    position: absolute;
+    color: #000;
+    z-index: 4;
+}
+.synth {
+    position: absolute;
+    color: #000;
+    z-index: 4;
+}
 
 /* sell section styling */
 #sell {
@@ -747,6 +806,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 #footer-header {
     font-size: 40px;
+}
+.logo {
+  width: 150px;
 }
 .ig-icon {
     padding-right: 10px;

@@ -544,7 +544,7 @@ button {
     padding-top: 50px;
     height: 150px;
     position: absolute;
-    width: 100%;
+    width: 400%;
     margin: auto;
     background-image: url("images/sine-2.svg");
     animation: sine_anim 75s linear infinite;
@@ -746,6 +746,12 @@ input[type=button], input[type=submit], input[type=reset] {
     color: #000;
     z-index: 4;
 }
+/* slideshow styling */
+.slider {
+    width: 70%;
+    margin: 0 auto;
+}
+
 
 /* sell section styling */
 #sell {

@@ -10,3 +10,4 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
+

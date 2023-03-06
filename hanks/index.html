@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--  Essential META Tags -->
-<meta property="og:title" content="Hank's Music Exchange">
-<meta property="og:type" content="musical instrument store website"/>
-<meta property="og:image" content="https://justincory.github.io/hanks/images/hanks-favicon.png">
-<meta property="og:url" content="https://justincory.github.io/hanks/">
-<meta name="twitter:card" content="summary_large_image">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Hank's Music Exchange">
+    <meta property="og:type" content="musical instrument store website"/>
+    <meta property="og:image" content="https://justincory.github.io/hanks/images/hanks-favicon.png">
+    <meta property="og:url" content="https://justincory.github.io/hanks/">
+    <meta name="twitter:card" content="summary_large_image">
 
-<!--  Non-Essential, But Recommended -->
-<meta property="og:description" content="Hank's Music Exchange is a small, eclectic music shop located inside of Eastside Guitar Repair in Portland, Oregon.">
-<meta property="og:site_name" content="Hank's Music Exchange">
-<meta name="twitter:image:alt" content="Hank's Music Exchange">
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Hank's Music Exchange is a small, eclectic music shop located inside of Eastside Guitar Repair in Portland, Oregon.">
+    <meta property="og:site_name" content="Hank's Music Exchange">
+    <meta name="twitter:image:alt" content="Hank's Music Exchange">
 
-<!--  Non-Essential, But Required for Analytics -->
-<meta property="fb:app_id" content="justincory.design" />
-<meta name="twitter:site" content="@DarkEntr13s">
-    <title>Hank's Music Exchange</title>
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="justincory.design" />
+    <meta name="twitter:site" content="@DarkEntr13s">
+<title>Hank's Music Exchange</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="icon" type="image/x-icon" href="images/hanks-favicon.png">
 </head>
 <body>
@@ -62,7 +64,7 @@
         <div class="button-left"><a href="index.html#shop"><h3 class="active-button">SHOP</h3><img src="images/hanks-button-Active-grn.png"></a></div>
         <div class="button-right"><a href="index.html#sell"><h3 class="inactive-button">SELL</h3><img src="images/hanks-button-inactive-grn.png"></a></div>
     </div>
-    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 834 560">
+    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 834 560" alt="square spacial motion animation graphic">
         <g id="Layer_1-2" data-name="Layer 1">
             <defs>
 
@@ -142,7 +144,7 @@
 <!-- The video -->
 <div id="video-container">
     <video autoplay muted loop id="video">
-        <source src="images/store-vid.mp4" type="video/mp4">
+        <source src="images/store-vid.mp4" type="video/mp4" alt="video of gear in Hank's shop">
     </video>
 <!-- Overlay text on the video -->
         <div class="content">
@@ -177,7 +179,10 @@
                 <button class="primary-button"><a href="index.html#contact"><h3 class="blk-button-text">Contact</h3><img src="images/hanks-button-active-grn.png"></a></button>
         </div>
             <div class="child right">
-                <img src="images/flint.jpg" alt="Flint pedal" style="width: 300px; height: 337px; object-fit: fill;">
+                <div class="slider">
+                    <div class="slide-item"><img src="images/flint.jpg" alt="Flint pedal" style="width: 300px; height: 337px; object-fit: fill;">
+                    </div>
+            </div>
         </div>
 </section>
 <section id="sell">
@@ -198,7 +203,7 @@
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 428 599.5" style="enable-background:new 0 0 428 599.5;" xml:space="preserve">
+                 viewBox="0 0 428 599.5" alt="spiral sound tunnel graphic" style="enable-background:new 0 0 428 599.5;" xml:space="preserve">
                  <defs>
                     <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
                         <!-- Thicken out the original shape -->
@@ -374,6 +379,8 @@
                 </svg></a>
                 
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="slick/slick.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

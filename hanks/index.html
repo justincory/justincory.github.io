@@ -23,17 +23,17 @@
                     </ul> -->
             <div class="nav-grid">
                     <div id="item-0">
-                        <img src="images/indicator-light.png" alt="Home indicator light" id="switch">
+                        <img src="images/indicator-light.png" alt="Home indicator light" id="light">
                         <img src="images/home-switch.png" alt="Home button" id="switch">
-                        <a class="nav" href="index.html">Home</a></div>
+                        <a id="home" href="index.html">Home</a></div>
                     <div id="item-1">
-                        <img src="images/space-echo-knob.png" alt="Shop button"><a class="nav" href="index.html#shop">Shop</a></div>
+                        <img src="images/space-echo-knob.png" alt="Shop button" id="knob1"><a class="nav" href="index.html#shop">Shop</a></div>
                     <div id="item-2">
-                        <img src="images/space-echo-knob.png" alt="Sell button"><a class="nav" href="index.html#sell">Sell</a></div>
+                        <img src="images/space-echo-knob.png" alt="Sell button" id="knob2"><a class="nav" href="index.html#sell">Sell</a></div>
                     <div id="item-3">
-                        <img src="images/space-echo-knob.png" alt="About button"><a class="nav" href="index.html#about">About</a></div>
+                        <img src="images/space-echo-knob.png" alt="About button" id="knob3"><a class="nav" href="index.html#about">About</a></div>
                     <div id="item-4">
-                        <img src="images/space-echo-knob.png" alt="Contact button"><a class="nav" href="index.html#contact">Contact</a></div>
+                        <img src="images/space-echo-knob.png" alt="Contact button" id="knob4"><a class="nav" href="index.html#contact">Contact</a></div>
                     <div id="item-5">
                         <img src="images/meter.png" alt="Interaction meter" id="meter"></div>
             </div>
@@ -42,6 +42,11 @@
 </section>   
 </header>
 <section id="hero">
+    <div class="hero-container">
+    <div class="two-button-container">
+        <div class="button-left"><a href="index.html#shop"><h3 class="active-button">SHOP</h3><img src="images/hanks-button-Active-grn.png"></a></div>
+        <div class="button-right"><a href="index.html#sell"><h3 class="inactive-button">SELL</h3><img src="images/hanks-button-inactive-grn.png"></a></div>
+    </div>
     <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 834 560">
         <g id="Layer_1-2" data-name="Layer 1">
             <defs>
@@ -111,12 +116,9 @@
           <line class="cls-12" x1="356.22" y1="254.03" x2="1.97" y2="100.22" filter="url(#sofGlow)"/>
           <line class="cls-7" x1="362.59" y1="242.92" x2="4.08" y2="2.59" filter="url(#sofGlow)"/>
         </g>
-
-      </svg>
-    <div class="2-buttons">
-        <div class="button-left"><a href="index.html#shop"><h3 class="active-button">SHOP</h3><img src="images/hanks-button-Active-grn.png"></a></div>
-        <div class="button-right"><a href="index.html#sell"><h3 class="inactive-button">SELL</h3><img src="images/hanks-button-inactive-grn.png"></a></div>
-    </div>
+</svg>
+</div>
+</section>
 <div class="marquee-container">
         <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1978.99 112">
@@ -179,52 +181,204 @@
 </svg>
 </div>
 </div>
-</section>
 <section id="testimonial">
-    <blockquote>
-        <h3>"Imagine a shop where somewhere among the collection of things, there might be that one thing you were looking for all along. 
-            <br><br>
-            On Hawthorne and 34th, there’s a place where that’s still possible. That shop is Hank’s Music Exchange, run by longtime Portland gear guru Hank Failing, out of the same space as Eastside guitar repair."
-       <br>—Eleven Magazine</h3>
-    </blockquote>
+    
+<!-- The video -->
+<div id="video-container">
+    <video autoplay muted loop id="video">
+        <source src="images/store-vid.mp4" type="video/mp4">
+    </video>
+<!-- Overlay text on the video -->
+        <div class="content">
+            <blockquote class="lineUp">"Imagine a shop where somewhere among the collection of things, there might be that one thing you were looking for all along. 
+                    <br><br>
+                    On Hawthorne and 34th, there’s a place where that’s still possible. That shop is Hank’s Music Exchange, run by longtime Portland gear guru Hank Failing, out of the same space as Eastside guitar repair."
+            <br><p class="lineUp">—Eleven Magazine</p>
+            </blockquote>
+            <!-- Button to pause/play the video with JavaScript -->
+            <button onclick="myFunction()" class="pause-button"><h3 class="button-text">PAUSE</h3><img src="images/hanks-button-inactive-grn.png"></button>
+        </div>
+</div>
 </section>
 <section id="shop">
-    <h1>Shop</h1>
+    <h1 class="text-focus-in">Shop</h1>
 </section>
 <section id="sell">
-    <h1>Sell - Trade - Consign</h1><br><br>
-    <h3>SELL:</h3><br>
-    <p>We will give you 50% of what we will price your gear when you sell it to us.
-    <br><br>    
-    <h3>TRADE:</h3><br>
-    <p>We will give you 60% of what we will price your gear when you trade it to us.</p><br><br>
-    <h3>CONSIGNMENT:</h3><br>
-    <p>We will give you 75% of what your item sells for 30 days after it sells. Item must have value of $500 or more to consign.</p><br><br>
-    <h3>RETURN POLICY:</h3><br>
-    <p>If you're not in love with the gear you purchased from us, you can return it within a week of purchase. As long as you didn't run it over with your car or drop your amp down a flight of stairs. Past a week of purchase we cannot return you item, but we can always buy it back for cash or trade! We want you to love everything you get from us, so hit us up if you have any questions or concerns!</p>
+    <h1 class="text-focus-in">Sell - Trade - Consign</h1><br><br>
+    <div class="parent">
+        <div class="child left">
+        <h3 class="text-focus-in">SELL:</h3><br>
+        <p class="text-focus-in">We will give you 50% of what we will price your gear when you sell it to us.
+        <br><br>    
+        <h3 class="text-focus-in">TRADE:</h3><br>
+        <p class="text-focus-in">We will give you 60% of what we will price your gear when you trade it to us.</p><br><br>
+        <h3 class="text-focus-in">CONSIGNMENT:</h3><br>
+        <p class="text-focus-in">We will give you 75% of what your item sells for 30 days after it sells. Item must have value of $500 or more to consign.</p><br><br>
+        <h3 class="text-focus-in">RETURN POLICY:</h3><br>
+        <p class="text-focus-in">If you're not in love with the gear you purchased from us, you can return it within a week of purchase. As long as you didn't run it over with your car or drop your amp down a flight of stairs. Past a week of purchase we cannot return you item, but we can always buy it back for cash or trade! We want you to love everything you get from us, so hit us up if you have any questions or concerns!</p>
+        </div>
+        <div class="child right">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 428 599.5" style="enable-background:new 0 0 428 599.5;" xml:space="preserve">
+                 <defs>
+                    <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+                        <!-- Thicken out the original shape -->
+                        <feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+                
+                        <!-- Use a gaussian blur to create the soft blurriness of the glow -->
+                        <feGaussianBlur in="thicken" stdDeviation="4" result="blurred" />
+                
+                        <!-- Change the colour -->
+                        <feFlood flood-color="rgb(69,84,71)" result="glowColor" />
+                
+                        <!-- Color in the glows -->
+                        <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+                
+                        <!--	Layer the effects together -->
+                        <feMerge>
+                            <feMergeNode in="softGlow_colored"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                
+                    </filter>
+                  </defs>
+            <path class="st0" d="M349.4,100.2c0,19.1-15,36.7-39.8,49.6c-24.7,12.8-59,20.8-96.9,20.8c-37.9,0-72.1-8-96.9-20.8
+                c-24.8-12.8-39.8-30.4-39.8-49.6c0-19.1,15-36.7,39.8-49.6c24.7-12.8,59-20.8,96.9-20.8c37.9,0,72.1,8,96.9,20.8
+                C334.5,63.5,349.4,81.1,349.4,100.2z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M322.7,99.1c0,14.5-12,27.8-31.9,37.6c-19.9,9.8-47.5,15.9-78,15.9s-58.1-6.1-78-15.9
+                c-20-9.8-31.9-23.2-31.9-37.6s12-27.8,31.9-37.6c19.9-9.8,47.5-15.9,78-15.9s58.1,6.1,78,15.9C310.8,71.3,322.7,84.6,322.7,99.1z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M295.1,99.1c0,10.9-8.9,21-23.8,28.5c-14.9,7.4-35.6,12.1-58.4,12.1s-43.5-4.6-58.4-12.1
+                c-15-7.5-23.8-17.6-23.8-28.5c0-10.9,8.9-21,23.8-28.5c14.9-7.4,35.6-12.1,58.4-12.1s43.5,4.6,58.4,12.1
+                C286.2,78.1,295.1,88.2,295.1,99.1z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M272.6,110c0,7.9-6.4,15.3-17.3,20.8c-10.8,5.5-25.9,8.9-42.6,8.9s-31.7-3.4-42.6-8.9
+                c-10.9-5.5-17.3-12.9-17.3-20.8c0-7.9,6.4-15.3,17.3-20.8c10.8-5.5,25.9-8.9,42.6-8.9s31.7,3.4,42.6,8.9
+                C266.3,94.8,272.6,102.2,272.6,110z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,128.4c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,118.6,252.6,123.4,252.6,128.4z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,149.6c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,139.8,252.6,144.6,252.6,149.6z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,167.2c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,157.4,252.6,162.2,252.6,167.2z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,187.8c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,178,252.6,182.8,252.6,187.8z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,206c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,196.2,252.6,201,252.6,206z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,226.7c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4s4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,216.9,252.6,221.7,252.6,226.7z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,244.5c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,234.7,252.6,239.5,252.6,244.5z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,265.4c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4s4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,255.6,252.6,260.4,252.6,265.4z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,283.5c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,273.7,252.6,278.5,252.6,283.5z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,303.7c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,293.9,252.6,298.7,252.6,303.7z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,322.1c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,312.3,252.6,317.1,252.6,322.1z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,342.6c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,332.8,252.6,337.6,252.6,342.6z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,360.9c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,351.1,252.6,355.9,252.6,360.9z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M252.6,381.1c0,5-4.1,9.8-11.4,13.4c-7.2,3.6-17.3,5.8-28.4,5.8c-11.1,0-21.2-2.2-28.4-5.8
+                c-7.3-3.6-11.4-8.4-11.4-13.4c0-5,4.1-9.8,11.4-13.4c7.2-3.6,17.3-5.8,28.4-5.8c11.1,0,21.2,2.2,28.4,5.8
+                C248.5,371.3,252.6,376.1,252.6,381.1z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M261.7,402.4c0,6.7-5.2,13.1-14.1,17.8c-8.9,4.7-21.1,7.6-34.8,7.6s-25.9-2.9-34.8-7.6
+                c-8.9-4.7-14.1-11.1-14.1-17.8s5.2-13.1,14.1-17.8c8.9-4.7,21.1-7.6,34.8-7.6s25.9,2.9,34.8,7.6
+                C256.5,389.4,261.7,395.7,261.7,402.4z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M282.2,416.5c0,9.7-7.5,18.7-20.1,25.3c-12.6,6.6-30,10.7-49.3,10.7s-36.7-4.1-49.3-10.7
+                c-12.6-6.6-20.1-15.7-20.1-25.3c0-9.7,7.5-18.7,20.1-25.3c12.6-6.6,30-10.7,49.3-10.7s36.7,4.1,49.3,10.7
+                C274.7,397.8,282.2,406.8,282.2,416.5z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M316.5,431.4c0,14.1-11.3,27.1-30.1,36.7c-18.8,9.5-44.8,15.4-73.6,15.4s-54.8-5.9-73.6-15.4
+                c-18.8-9.6-30.1-22.6-30.1-36.7c0-14.1,11.3-27.1,30.1-36.7c18.8-9.5,44.8-15.4,73.6-15.4s54.8,5.9,73.6,15.4
+                C305.2,404.3,316.5,417.3,316.5,431.4z" filter="url(#sofGlow)"/>
+            <path class="st0" d="M349.4,443.4c0,18-14.9,34.6-39.8,46.8c-24.7,12.1-59,19.6-96.9,19.6c-37.9,0-72.1-7.5-96.9-19.6
+                c-24.8-12.2-39.8-28.8-39.8-46.8s14.9-34.6,39.8-46.8c24.7-12.1,59-19.6,96.9-19.6c37.9,0,72.1,7.5,96.9,19.6
+                C334.5,408.8,349.4,425.4,349.4,443.4z" filter="url(#sofGlow)"/>
+            <path class="st1" d="M166.3,177.6c2.9-13.1,8.6-32.8,17.2-41.3 M244.4,133.4c9.5,9.5,17.2,28,16.8,44.2 M244.4,133.4
+                c27.2-13.4,60.7-3,98.7,57.3 M244.4,133.4c33.4-41.4,54.2-60,113.4-55.5 M244.4,133.4c23.8-15,77.3-37.1,126.4-18.9 M183,133.4
+                c-55.4-16.1-84.4,3-108.3,53.4 M183,133.4C153,107.6,69.3,99.8,36.5,116 M183,133.4c-8.9-16.5-63.8-67-122.5-60.7 M350.9,468
+                c-17-3.6-57.7-19.2-84.4-53.4c-33.4-42.7-31-112.9-31-148.9c0-36-7.4-155.7,38.6-187.7c41.3-38.4,83.7-41.5,83.7-41.5 M343.1,5.7
+                c0,0-66.2,21.5-86.5,62.4c-19.9,49.9-30.3,74-28.4,197.6c1.9,123.6,24.8,161.8,42.5,185.9c17.7,24.2,56.8,59,74.9,69.7 M291.7,561.1
+                c-24.8-23.5-46.7-65-53.8-103.2c-7.2-38.2-15.3-93.3-16.2-131.4c-1-38.2-1.9-209,10.5-251.1c12.4-42.1,16.2-52.2,23.9-65.7
+                 M169.6,9.6c10,20.4,30.4,69.8,32,103.9c1.5,34.2,0.6,80.9,0,100c-0.3,39.7-1.2,122.8-2.4,137.6c-1.4,18.5-5.2,77.5-11,100.6
+                c-5.7,23-24.3,69.7-53.4,109.4" filter="url(#sofGlow)"/>
+            
+            <path class="st1" d="M74.7,9.6c21.1,2.8,69.6,18.7,94,59.5c30.5,51.1,26.2,102.8,25.8,129.2s1,151.7-10.5,192.1
+                c-11.4,40.4-60.1,110.7-100.7,129.2 M76.6,468c15.3-3.9,50.1-16.9,67.3-37.1c21.5-25.3,40.5-53.4,43.4-128.6
+                c2.9-75.3,0.8-158.4-7.2-181.4c-7.6-23-24.3-50.6-54.4-62.4c-24-9.4-44-11.4-51-11.2 M175.1,149.6c1.9,11.6,8.9,45,8.9,98.2
+                c0,69.8-3.8,124.7-24.3,149.4c-20.5,24.7-74.4,31.5-82,24.7 M353.3,421.9c-19.1,3.4-55.8,5.1-80.1-19.7c-6-6.1-11.1-13.7-15.4-22.5
+                 M252.8,145c-8.2,20.4-13.5,86.6-13.5,129.8c0,40.6,5.4,78.3,18.5,105 M257.7,379.8c5.8,2.8,21.6,6.2,38.8-2.8
+                c17.2-9,26.6-19.1,29.1-23 M257.7,379.8c5.9,7.5,22,22.5,38.8,22.5c21,0,44.8-10.7,56.8-18" filter="url(#sofGlow)"/>
+            <path class="st1" d="M99,354c20.6,27.4,54.1,29.8,68.2,27.5c-9.1,14-26.7,18-51,19.7c-19.5,1.3-34.2-10.7-39.1-16.9" filter="url(#sofGlow)"/>
+            </svg>
+            
+        </div>
+    </div>
 </section>
 <section id="about">
-    <h1>About</h1><br><br>
-    <h3>Serving Portland's Music Scene Since 1997</h3><br>
-    <p>Hank's Music Exchange is a small, eclectic music shop located inside of Eastside Guitar Repair in Portland, Oregon.We specialize in guitars, amplifiers, tons of effects, keyboards/synths, and recording gear. We're always buying, selling, or trading tons of fun and affordable gear.We also offer consignment along with estate purchasing. Hank Failing got his start working at Old Town Music in 1997 at the age of 20 and worked there for over 22 year serving local and touring musicians.</p>
-    <br><br>
-    <h3>Covid 19 Policies</h3><br>
-    <p>As of right now, masks are optional in the shop, but encouraged by our staff. We have air filters operating at all hours in the shop. We ask anyone who has been recently exposed to COVID-19 or has any symptoms relating to COVID-19 to refrain from entering the shop. Please DM us on instagram, or email us if you would like to inquire about, or purchase our gear. Our mask policy is subject to change as we monitor the changes of COVID cases in Portland. We want to be as safe and respectful to our beloved music community as possible, and that means taking as many precautions as possible to protect ourselves and others from COVID-19. Thank you! <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/facts.html?s_cid=10496:cdc%20covid%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY21">Learn more.</a></p>
-
+    <h1 class="text-focus-in">About</h1><br><br>
+<div class="parent">
+        <div class="child left">
+        <h3 class="text-focus-in">Serving Portland's Music Scene Since 1997</h3><br>
+        <p class="text-focus-in">Hank's Music Exchange is a small, eclectic music shop located inside of Eastside Guitar Repair in Portland, Oregon.We specialize in guitars, amplifiers, tons of effects, keyboards/synths, and recording gear. We're always buying, selling, or trading tons of fun and affordable gear.We also offer consignment along with estate purchasing. Hank Failing got his start working at Old Town Music in 1997 at the age of 20 and worked there for over 22 year serving local and touring musicians.</p>
+        <br><br>
+        <h3 class="text-focus-in">Covid 19 Policies</h3><br>
+        <p class="text-focus-in">As of right now, masks are optional in the shop, but encouraged by our staff. We have air filters operating at all hours in the shop. We ask anyone who has been recently exposed to COVID-19 or has any symptoms relating to COVID-19 to refrain from entering the shop. Please DM us on instagram, or email us if you would like to inquire about, or purchase our gear. Our mask policy is subject to change as we monitor the changes of COVID cases in Portland. We want to be as safe and respectful to our beloved music community as possible, and that means taking as many precautions as possible to protect ourselves and others from COVID-19. Thank you! <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/facts.html?s_cid=10496:cdc%20covid%20vaccine:sem.ga:p:RG:GM:gen:PTN:FY21">Learn more.</a></p>
+        </div>
+        <div class="child right">
+            <img src="images/hank-shop.png">
+        </div>
+</div>
 </section>
 <section id="contact">
-    <h1>Contact</h1><br><br>
-    <p>If you have gear for sale, are looking for something specific, or have any questions on anything message us here.</p><br><br>
-    <h1>Giftcards</h1><br><br>
-    <h3>Give the Perfect Gift!</h3><br>
-    <p>Get a voucher for yourself or gift one to a friend!</p><br><br>
-    <h1>Newsletter</h1><br><br>
-    <h3>Be a part of the exchange!</h3><br>
-    <p>Sign up for our email newsletter:</p><br><br>
+    <div class="parent">
+        <div class="child left">
+    <h1 class="text-focus-in">Contact</h1><br><br>
+        <p class="text-focus-in">If you have gear for sale, are looking for something specific, or have any questions on anything message us here.</p><br><br>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" value="">
+            <button type="submit" class="secondary-button"><h3 class="button-text">Submit</h3><img src="images/hanks-button-inactive-grn.png"></button>
+          </form>
+        </div>
+        <div class="child right">
+        <h1 class="text-focus-in">Giftcards</h1><br><br>
+        <h3 class="text-focus-in">Give the Perfect Gift!</h3><br>
+        <p class="text-focus-in">Get a voucher for yourself or gift one to a friend!</p>
+        <button class="secondary-button"><a href="https://www.hanksmusicexchange.com/s/gift-cards" target="_blank"><h3 class="button-text">Giftcard</h3><img src="images/hanks-button-inactive-grn.png"></a></button><br><br><br>
+        <h1 class="text-focus-in">Newsletter</h1><br><br>
+        <h3 class="text-focus-in">Be a part of the exchange!</h3><br>
+        <p class="text-focus-in">Sign up for our email newsletter:</p><br><br>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="">
+            <button type="submit" form="newsletter" class="secondary-button"><h3 class="button-text">Subscribe</h3><img src="images/hanks-button-inactive-grn.png"></button>
+          </form>
+        </div>
+</div>
 </section>
 <footer id="footer">
-    <h1 id="footer-header">Hank's Music Exchange</h1><br>
-    <p>Hours: Tue-Sat, 11-6pm<br>
+    <h1 class="text-focus-in" id="footer-header">Hank's Music Exchange</h1><br>
+    <p class="text-focus-in">Hours: Tue-Sat, 11-6pm<br>
         SE Hawthorne Blvd, Portland OR, 97214<br>
         <a href="tel:9713635244">971-363-5244</a><br>
         <a href="mailto:hanksmusicexchange@gmail.com">hanksmusicexchange@gmail.com</a></p><br><br>
@@ -236,5 +390,6 @@
                 </svg></a>
                 
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

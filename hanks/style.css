@@ -102,12 +102,58 @@ h4 {
 p {
     font-family: "Aeonik", sans-serif;
     font-size: 20px;
-    color:#B1D5B6; 
+    color:#B1D5B6;
+    line-height: 1.5rem;
 }
-blockquote {
-    font-family: "Wilden", sans-serif;
-    font-size: 25px;
-    color: #fff;  
+/* focus in text and keyframes */
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* lineup class and keyframes */
+.lineUp {
+  animation: 2s anim-lineUp ease-out 1;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 img { 
     width: 100%;
@@ -191,12 +237,11 @@ a:visited {
 .nav-grid {
     display: grid; 
     grid-template-rows: 1;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
     height: 100px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    padding-bottom: 30px;
  }
 #item-0 {
     grid-row-start: 1;
@@ -211,41 +256,78 @@ a:visited {
     grid-column-start: 3;
     grid-row-end: 2;
     grid-column-end: 4;  
+    width: 72px;
+    margin: auto;
  }
  #item-2 {
     grid-row-start: 1;
     grid-column-start: 4;
     grid-row-end: 2;
-    grid-column-end: 5;  
+    grid-column-end: 5;
+    width: 72px;
+    margin: auto;  
  }
  #item-3 {
     grid-row-start: 1;
     grid-column-start: 5;
     grid-row-end: 2;
-    grid-column-end: 6;  
+    grid-column-end: 6; 
+    width: 72px;
+    margin: auto; 
  }
  #item-4 {
     grid-row-start: 1;
     grid-column-start: 6;
     grid-row-end: 2;
-    grid-column-end: 7;  
+    grid-column-end: 7; 
+    width: 72px;
+    margin: auto; 
  }
  #item-5 {
     grid-row-start: 1;
     grid-column-start: 7;
     grid-row-end: 2;
     grid-column-end: 9;  
-    place-self: center;
+    align-content: baseline;
+    width: 280px;
+    margin: auto;
+    display: inline;
  }
-
+#light {
+  width: 40%;
+  display: block;
+  margin: auto;
+}
 #switch {
     width: 50%;
+    margin: auto;
+    display: block;
+}
+#home {
+  margin: auto;
+  display: block;
+  padding-top: 5px;
+}
+#knob1 {
+  transform: rotate(90deg);
+}
+#knob2 {
+  transform: rotate(-90deg);
+}
+#knob3 {
+  transform: rotate(-60deg);
+}
+#knob4 {
+  transform: rotate(40deg);
 }
 #meter {
     width: 60%;
 }
 #hero {
     padding-top: 200px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 /* SVG hero animation styling */
@@ -379,29 +461,28 @@ a:visited {
     }
   }
  /* end of svg hero animation styling */
- 
-  /* button styling */
-.two-buttons {
-    padding-top: 20px;
+.hero-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+/* button styling */
+.two-button-container {
+    position: absolute; 
     display: flex;
-    flex-direction: row;
-    z-index: 2;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 .button-left {
-    display: flex;
-    flex: 1;
-    width: 15%;
-    margin: auto;
     position: relative;
-    z-index: 2;
+    padding-right: 10px;
 }
 .button-right {
-    display: flex;
-    flex: 1;
-    width: 15%;
-    margin: auto;
     position: relative;
-    z-index: 2;
+    padding-left: 10px;
 }
 .active-button {
     position: absolute;
@@ -416,6 +497,28 @@ a:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.secondary-button {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+}
+.button-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}   
+.pause-button {
+  position: relative;
+  display: block;
+  padding-top: 10px;
+  margin: auto;
+}
+button {
+  background: none;
+  border: none;
 }
 
 /* marquee styling */
@@ -481,43 +584,158 @@ a:visited {
 
  /* testimonial section styling */
 #testimonial {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 100px;
+    width: 100%;
     margin: auto;
+}
+
+blockquote {
+  width: 80%;
+  margin: auto;
+  font-family: "Wilden", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 2.5rem;
+  padding-bottom: 20px; 
+  padding-top: 15%; 
+}
+/* video styling: 100% width and height to cover the entire window */
+#video-container { 
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+}
+#video {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* content over video */
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+/* Style the button used to pause/play the video */
+#myBtn {
+  margin: auto;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background: url("images/hanks-button-active-grn.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  font-family: "Wilden", sans-serif;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  align-items: center;
+}
+.parent { 
+  display: flex;
+}
+.child {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  padding-right: 10px;
+}
+.right {
+  padding-left: 10px;
+}
+form {
+  color: #fff;
+  font-family: "Aeonik", sans-serif;
+  font-size: 20px;
+}
+input[type=text] {
+  display: block;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: #B1D5B6;
+  color: #000;
+  font-family: "Aeonik", sans-serif;
+  font-size: 20px;
+}
+input[type=email] {
+  display: block;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: #B1D5B6;
+  color: #000;
+  font-family: "Aeonik", sans-serif;
+  font-size: 20px;
+}
+input[type=text]:focus {
+  border: 3px solid #CB553C;
+}
+input[type=email]:focus {
+  border: 3px solid #CB553C;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-image: url("images/hanks-button-inactive-grn.png");
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: "Wilden", sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
 }
 
 /* shop section styling */
 #shop {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 220px;
+    width: 80%;
     margin: auto;
 }
 
 /* sell section styling */
 #sell {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 220px;
+    width: 80%;
     margin: auto;
+}
+
+.st0 {
+  fill:none;stroke:#CB553C;stroke-width:3;
+}
+.st1 {
+  fill:none;stroke:#B1D5B6;stroke-width:3;stroke-linecap:round;
 }
 
 /* about section styling */
 #about {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 220px;
+    width: 80%;
     margin: auto;
 }
 
 /* contact section styling */
 #contact {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 220px;
+    width: 80%;
     margin: auto;
 }
 
 /* footer section styling */
 #footer {
-    padding-top: 150px;
-    width: 60%;
+    padding-top: 220px;
+    width: 80%;
     margin: auto;
     bottom: 0;
     padding-bottom: 50px;

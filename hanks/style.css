@@ -648,6 +648,18 @@ input[type=text] {
   font-family: "Aeonik", sans-serif;
   font-size: 20px;
 }
+textarea {
+  display: block;
+  min-width: 80%;
+  max-width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: #B1D5B6;
+  color: #000;
+  font-family: "Aeonik", sans-serif;
+  font-size: 20px;
+}
 input[type=email] {
   display: block;
   width: 80%;
@@ -660,6 +672,9 @@ input[type=email] {
   font-size: 20px;
 }
 input[type=text]:focus {
+  border: 3px solid #CB553C;
+}
+textarea:focus {
   border: 3px solid #CB553C;
 }
 input[type=email]:focus {

@@ -234,7 +234,7 @@ a {
     color: #fff;
 }
 a:hover {
-    scale: 1.1;
+    ;
   }
 a:visited {
     color: #fff;
@@ -542,60 +542,24 @@ button {
 /* marquee styling */
 .marquee-container {
     padding-top: 50px;
-    display: flex;
-    align-content: center;
-    max-width: 100vw;
-    margin: auto;
-}
-.cls-420 {
-    fill: #b1d5b6;
+    height: 150px;
     position: absolute;
-    flex: 1;
-    flex-shrink: 0;
-    align-items: center;
-    min-width: 100%;
-    height: 200%;
-    margin: 0;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -moz-animation: scroll-left 5s linear infinite;
-    -webkit-animation: scroll-left 5s linear infinite;
-    animation: scroll-left 30s linear infinite;
+    width: 100%;
+    margin: auto;
+    background-image: url("images/sine-2.svg");
+    animation: sine_anim 75s linear infinite;
 }
 
-@-moz-keyframes scroll-left {
+@keyframes sine_anim {
     0% {
-        -moz-transform: translateX(100%);
+        background-position: 0px 0;
     }
     100% {
-        -moz-transform: translateX(-100%);
-    }
-}
-
-@-webkit-keyframes scroll-left {
-    0% {
-        -webkit-transform: translateX(100%);
-    }
-    100% {
-        -webkit-transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll-left {
-    0% {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-    }
-    100% {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+        background-position: -5000px 0;
     }
 }
 @media (prefers-reduced-motion: reduce) {
-  .cls-420 {
+  .marquee-container {
     animation-play-state: paused;
   }
 }
@@ -726,6 +690,7 @@ input[type=button], input[type=submit], input[type=reset] {
   display: flex;
   position: relative;
   justify-content: center;
+  width: 300px;
 }
 .gear-selector {
     width: 60px;
@@ -741,33 +706,43 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 .guitar {
     position: absolute;
-    top: 10;
-    left: 10;
+    top: 40px;
+    left: 15px;
     color: #000;
     z-index: 4;
 }
 .effects { 
     position: absolute; 
+    top: 10px;
+    left: 110px;
     color: #000;
     z-index: 4;
 }
 .amps { 
     position: absolute;
+    top: 40px;
+    right: 15px;
     color: #000;
     z-index: 4;
 }
 .bass {
     position: absolute;
+    bottom: 40px;
+    left: 15px;
     color: #000;
     z-index: 4;
 }
 .accessories {
     position: absolute;
+    bottom: 10px;
+    left: 80px;
     color: #000;
     z-index: 4;
 }
 .synth {
     position: absolute;
+    bottom: 40px;
+    right: 15px;
     color: #000;
     z-index: 4;
 }
@@ -819,4 +794,11 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 .fb-icon {
     padding-left: 10px;
+}
+.thanks { 
+  margin: auto;
+  align-items: center;
+  width: 80%;
+  padding-top: 250px;
+  text-align: center;
 }

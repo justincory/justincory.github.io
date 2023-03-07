@@ -842,13 +842,14 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 /* Mobile Breakpoint media queries */
 @media screen and (max-width: 768px) {
-  nav {
+
+nav {
     background-image: url("images/metal-nav-bkgnd.png");
     position: fixed;
     height: 100px;
     width: 100%;
     margin-top: 0;
-    z-index: 99;
+    z-index: 9;
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ;
@@ -858,12 +859,12 @@ input[type=button], input[type=submit], input[type=reset] {
   font-family: "Data70", monospace;
   font-size: 30px;
   color: #000;
-  text-align: left;
+  text-align: center;
 }
 .nav-grid {
 display: none;
 }
-.nav,
+/* .nav,
   .desktop {
     display: block;
     position: fixed;
@@ -871,7 +872,7 @@ display: none;
     left: 0px;
     width: 100%;
     z-index: 900;
-  }
+  } */
 .burger {
   position: fixed;
   cursor: pointer;
@@ -926,11 +927,11 @@ display: none;
 .burger.active .hamburger:before {
   top: 0;
   transform: rotate(45deg);
-  background: #1f1f1f;
+  background: #000000;
 }
 
 .burger.active .hamburger:after {
-  background: #1f1f1f;
+  background: #000000;
   top: 0;
   transform: rotate(135deg);
 }
@@ -978,17 +979,75 @@ display: none;
   display: inline-block;
 }
 .child {
-  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
 .left {
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
-  padding-right: 0;
+  padding: 0;
 }
 .right {
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
   padding-left: 0;
 }
-
+p, h1, h2, h3, h4, form, button {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.gear-filter {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+input[type=text] {
+  width: 90%;
+  padding-top: 20px;
+  margin: auto;
+}
+textarea {
+  margin: auto;
+  padding-top: 20px;
+  max-width: 90%;
+  min-width: 90%;
+}
+input[type=email] {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  margin: auto;
+}
+.secondary-button {
+  margin: auto;
+  display: block;
+}
+#footer {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+  margin: auto;
+}
+.ig-icon {
+    margin: auto;
+    align-items: center;
+    display: block;
+    padding-right: 0;
+}
+.fb-icon {
+    margin: auto;
+    display: block;
+    align-items: center;
+    padding-left: 0;
+}
 }

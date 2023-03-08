@@ -992,7 +992,7 @@ display: none;
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  padding-left: 0;
+  padding: 0;
 }
 p, h1, h2, h3, h4, form, butto, blockquote {
   text-align: center;

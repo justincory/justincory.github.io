@@ -199,14 +199,14 @@ nav ul {
     justify-content: space-between;
     margin: auto;
 }
-.nav {
+.desktop {
     font-family: "Wilden", sans-serif;
     font-size: 20px;
     color: #000;
     margin: auto;
     z-index: 99;  
 }
-.nav a:visited {
+.desktop a:visited {
     color: #000;
 }
 .frame {
@@ -549,11 +549,13 @@ button {
 /* marquee styling */
 .marquee-container {
     padding-top: 50px;
+    padding-bottom: 100px;
     height: 150px;
     position: absolute;
     width: 100%;
     margin: auto;
-    background-image: url("images/sine-2.svg");
+    background-repeat: repeat-x;
+    background-image: url("images/sine-wave-2.png");
     animation: sine_anim 75s linear infinite;
 }
 
@@ -573,7 +575,7 @@ button {
 
  /* testimonial section styling */
 #testimonial {
-    padding-top: 100px;
+    padding-top: 200px;
     width: 100%;
     margin: auto;
 }
@@ -836,50 +838,40 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 @media screen and (min-width: 769px) {
-.hamburger-nav {
-  display: none;
-}
+
 }
 /* Mobile Breakpoint media queries */
 @media screen and (max-width: 768px) {
 
 nav {
+
     background-image: url("images/metal-nav-bkgnd.png");
     position: fixed;
     height: 100px;
     width: 100%;
     margin-top: 0;
-    z-index: 9;
+    z-index: 10;
     box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5)  ;
 }
-.title {
-  margin-top: 5px;
-  font-family: "Data70", monospace;
-  font-size: 30px;
-  color: #000;
-  text-align: center;
+/* START of Mobile Menu */
+.nav, .desktop {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 900;
 }
-.nav-grid {
-display: none;
-}
-/* .nav,
-  .desktop {
-    display: block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 900;
-  } */
-.burger {
+
+.icon {
   position: fixed;
   cursor: pointer;
-  top: 6%;
+  top: 5%;
   right: 0%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 45px;
   transform: translate(-50%, -50%);
   display: block;
   z-index: 1000;
@@ -889,14 +881,14 @@ display: none;
   width: 40px;
   height: 4px;
   line-height: 70px;
-  background: #000000;
+  background: #666;
   border-radius: 5px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
 }
 
 .hamburger:before,
@@ -905,10 +897,10 @@ display: none;
   position: absolute;
   width: 40px;
   height: 4px;
-  background;
+  background: #666;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  transition: .5s;
 }
 
 .hamburger:before {
@@ -919,36 +911,33 @@ display: none;
   top: 10px;
 }
 
-.burger.active .hamburger {
-  background: rgba(0, 0, 0, 0);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+.icon.active .hamburger {
+  background: rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
-.burger.active .hamburger:before {
+.icon.active .hamburger:before {
   top: 0;
   transform: rotate(45deg);
-  background: #000000;
 }
 
-.burger.active .hamburger:after {
-  background: #000000;
+.icon.active .hamburger:after {
   top: 0;
   transform: rotate(135deg);
 }
 
 .menu-mobile {
-  background-image: url("images/metal-nav-bkgnd.png");
-  height: 50vh;
+  background-color: #efefef;
+  height: 100vh;
   position: fixed;
   width: 100%;
   z-index: 999;
-  padding-top: 100px;
-  font-family: 'Wilden', sans-serif;
+  padding-top: 150px;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
 }
 
-.menu-mobile,
-.menu-mobile a {
+.menu-mobile, .menu-mobile a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -956,14 +945,30 @@ display: none;
 .menu-mobile a {
   clear: right;
   text-decoration: none;
-  color: #000000;
+  color: #333;
   height: 70px;
   line-height: 70px;
 }
-
-.menu-mobile {
-  display: none;
+.menu-mobile a:hover {
+  color: red;
 }
+
+.desktop, .menu-desktop, .menu-mobile {
+      display: none;
+  }
+/* END OF Mobile Menu */
+
+.title {
+  margin-top: 5px;
+  font-family: "Data70", monospace;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+}
+.nav-grid {
+display: none;
+}
+ 
 .frame {
   position: absolute;
   border-radius: 10px;

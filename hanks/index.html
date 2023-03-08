@@ -22,12 +22,11 @@
 <title>Hank's Music Exchange</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="path/to/lightbox.css">
     <link rel="icon" type="image/x-icon" href="images/hanks-favicon.png">
 </head>
 <body>
-<header>
-<section class="nav"> 
+<header class="desktop">
     <nav>
         <div class="frame">
                 <h1 class="title"><a href="index.html">Hank's Music Exchange</a></h1>
@@ -55,21 +54,18 @@
                         <!--<img src="images/meter.png" alt="Interaction meter" id="meter">--> </div>
             </div>
         </div>
+    </header>
+    <header class="nav">
+            <div class="icon">
+                <div class="hamburger"></div>
+            </div>
+            <div class="menu-mobile">
+            <a class="nav" href="index.html#shop">Shop</a>
+            <a class="nav" href="index.html#sell">Sell</a>
+            <a class="nav" href="index.html#about">About</a>
+            <a class="nav" href="index.html#contact">Contact</a>
+        </div> 
     </nav>
-</section>
-<section class="hamburger-nav">
-    <nav class="mobile-nav">
-      <div class="burger">
-        <div class="hamburger"></div>
-      </div>
-      <div class="menu-mobile">
-        <a class="nav" href="index.html#shop">Shop</a>
-        <a class="nav" href="index.html#sell">Sell</a>
-        <a class="nav" href="index.html#about">About</a>
-        <a class="nav" href="index.html#contact">Contact</a>
-      </div>
-    </nav>
-</section>  
 </header>
 <section id="hero">
     <div class="hero-container">
@@ -192,9 +188,21 @@
                 <a href="index.html#contact"><button class="secondary-button"><h3 class="blk-button-text">Contact</h3><img src="images/hanks-button-Active-grn.png" alt="Contact button"></button></a>
         </div>
             <div class="child right">
-                <div class="slider">
-                    <div class="slide-item"><img src="images/flint.jpg" alt="Flint pedal" style="width: 300px; height: 337px; object-fit: fill;">
+                <div>
+                    <a class="show-image" href="images/shop/effects/bigsky.jpg" data-lightbox="shop-set" data-title="BigSky"><img src="images/shop/effects/bigsky.jpg"></a>
+                    <p><a class="shop-image-link" href="images/shop/effects/bigsky.jpg" data-lightbox="shop-set" data-title="BigSky"></a></p>
+                    <div style="display:none;">
+                        <a class="shop-image-link" href="images/shop/effects/apocalypse.jpg" data-lightbox="shop-set" data-title="apocalypse"><img src="images/shop/effects/apocalypse.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/benson-pedals.jpg" data-lightbox="shop-set" data-title="benson"><img src="images/shop/effects/benson-pedals.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/deathbyaudio.jpg" data-lightbox="shop-set" data-title="deathbyAudio"><img src="images/shop/effects/deathbyaudio.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/moog.jpg" data-lightbox="shop-set" data-title="moog"><img src="images/shop/effects/moog.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/octaves.jpg" data-lightbox="shop-set" data-title="Octaves"><img src="images/shop/effects/octaves.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/spacebender.jpg" data-lightbox="shop-set" data-title="SpaceBender"><img src="images/shop/effects/spacebender.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/sunn.jpg" data-lightbox="shop-set" data-title="Sunn"><img src="images/shop/effects/sunn.jpg"></a>
+                        <a class="shop-image-link" href="images/shop/effects/waldorf.jpg" data-lightbox="shop-set" data-title="waldorf"><img src="images/shop/effects/waldorf.jpg"></a>
+                    
                     </div>
+                </div>
             </div>
         </div>
 </section>
@@ -393,7 +401,7 @@
                 
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="slick/slick.min.js"></script>
+<script src="path/to/lightbox.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

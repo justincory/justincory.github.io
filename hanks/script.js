@@ -38,8 +38,25 @@ function desktopMenu() {
         }
     })
 }
-
+$('.effects').click(function () {
+  $('.accessories').css('display', 'block')
+  $('.shopicons').not('.accessories').css('display', 'none')
+})
+$('#apparel').click(function () {
+  $('.apparel').css('display', 'block')
+  $('.shopicons').not('.apparel').css('display', 'none')
+})
+$('#figures').click(function () {
+  $('.figures').css('display', 'block')
+  $('.shopicons').not('.figures').css('display', 'none')
+})
+$('#plushies').click(function () {
+  $('.plushies').css('display', 'block')
+  $('.shopicons').not('.plushies').css('display', 'none')
+})
 //when the page loads call toggleIcon;
 $(toggleIcon);
 $(closeMobileMenu);
 $(desktopMenu);
+
+

@@ -332,7 +332,7 @@ a:visited {
     padding-top: 200px;
     width: 70%;
     margin: auto;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 /* SVG hero animation styling */
@@ -460,7 +460,7 @@ a:visited {
     from {stroke: #cb553c; }
     to {stroke: #B1D5B6;}
   }
-  @media (prefers-reduced-motion: reduce) {
+  /*@media (prefers-reduced-motion: reduce) {
     .cls-19:nth-child(2) .cls-19:nth-child(3) .cls-19:nth-child(4) .cls-19:nth-child(5) .cls-19:nth-child(6) {
       animation-play-state: paused;
     }
@@ -548,7 +548,6 @@ button {
 
 /* marquee styling */
 .marquee-container {
-    padding-top: 50px;
     padding-bottom: 100px;
     height: 150px;
     position: absolute;
@@ -587,14 +586,13 @@ blockquote {
   font-size: 2rem;
   color: #fff;
   text-align: center;
-  line-height: 2.5rem;
-  padding-bottom: 20px; 
-  padding-top: 15%; 
+  line-height: 2.5rem; 
+  padding-top: 50px;
 }
 /* video styling: 100% width and height to cover the entire window */
 #video-container { 
-  min-width: 100vw;
-  min-height: 100vh;
+  min-width: 100dvw;
+  min-height: 100dvh;
   margin: auto;
   position: relative;
 }
@@ -713,6 +711,13 @@ input[type=button], input[type=submit], input[type=reset] {
     padding-top: 220px;
     width: 80%;
     margin: auto;
+    padding-bottom: 100px;
+}
+.gear-flex .left {
+  flex:300px
+}
+.gear-flex .right {
+  flex: calc(100% - 300px);
 }
 .gear-filter {
   display: flex;
@@ -784,6 +789,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* sell section styling */
 #sell {
     padding-top: 220px;
+    padding-bottom: 100px;
     width: 80%;
     margin: auto;
 }
@@ -798,6 +804,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* about section styling */
 #about {
     padding-top: 220px;
+    padding-bottom: 100px;
     width: 80%;
     margin: auto;
 }
@@ -805,6 +812,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* contact section styling */
 #contact {
     padding-top: 220px;
+    padding-bottom: 100px;
     width: 80%;
     margin: auto;
 }
@@ -980,6 +988,10 @@ display: none;
   width: 95%;
   height: 80px;
 }
+#video {
+  width: 200%;
+  overflow: hidden;
+}
 .parent { 
   display: inline-block;
 }
@@ -999,12 +1011,26 @@ display: none;
   padding-top: 20px;
   padding: 0;
 }
-p, h1, h2, h3, h4, form, butto, blockquote {
+.gear-flex .left {
+  width: 300px; 
+}
+
+p, h1, h2, h3, h4, form {
   text-align: center;
   align-items: center;
   margin: auto;
   scale: 85%;
 }
+#video-container { 
+  overflow: hidden;
+}
+
+blockquote {
+  width: 95%;
+  line-height: inherit; 
+  padding-top: 20px;
+}
+
 .gear-filter {
   display: flex;
   position: relative;
@@ -1030,6 +1056,11 @@ input[type=email] {
 }
 input[type=button], input[type=submit], input[type=reset] {
   margin: auto;
+}
+label {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .secondary-button {
   margin: auto;

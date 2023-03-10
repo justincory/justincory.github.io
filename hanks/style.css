@@ -621,6 +621,16 @@ a:visited {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.button-left:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
+.button-right:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
 .inactive-button {
   position: absolute;
   color: #fff;
@@ -645,10 +655,22 @@ a:visited {
   display: inline-block;
   padding-top: 10px;
 }
+.primary-button:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
 .secondary-button:hover {
   transition: 0.2s ease-in;
-  filter: grayscale(70%);
-  color: #000;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
+.button-text {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #button-text {
   position: absolute;
@@ -665,6 +687,11 @@ a:visited {
   display: block;
   padding-top: 10px;
   margin: auto;
+}
+#pause-button:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
 }
 button {
   background: none;
@@ -1047,22 +1074,24 @@ input[type='reset'] {
   .icon.active .hamburger:before {
     top: 0;
     transform: rotate(45deg);
+    background-color: #000;
   }
 
   .icon.active .hamburger:after {
     top: 0;
     transform: rotate(135deg);
+    background-color: #000;
   }
 
   .menu-mobile {
     background-image: url('images/metal-nav-bkgnd.png');
-    height: 100vh;
+    height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    padding-top: 150px;
+    padding-top: 40px;
     font-family: 'Wilden', sans-serif;
     font-size: 20px;
     color: #000;
@@ -1126,14 +1155,13 @@ input[type='reset'] {
   .left {
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
     padding: 0;
   }
   .right {
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding: 0;
+    padding-top: 30px;
+    padding-left: 0;
   }
   .gear-flex .left {
     width: 300px;
@@ -1157,9 +1185,9 @@ input[type='reset'] {
   }
 
   blockquote {
-    width: 95%;
+    width: 85%;
     line-height: inherit;
-    padding-top: 60px;
+    padding-top: 80px;
   }
 
   .gear-filter {

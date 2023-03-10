@@ -1001,6 +1001,7 @@ input[type='reset'] {
   align-items: center;
   width: 80%;
   padding-top: 220px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -1010,6 +1011,14 @@ input[type='reset'] {
 @media screen and (max-width: 768px) {
   /* START of Mobile Menu */
 
+.mobile-head {
+  font-size: 40px;
+  color: #b1d5b6;
+  text-align: left;
+  top: 10px;
+  position: fixed;
+  display: inline-block;
+}
   .desktop {
     display: block;
     position: fixed;
@@ -1085,7 +1094,7 @@ input[type='reset'] {
 
   .menu-mobile {
     background-image: url('images/metal-nav-bkgnd.png');
-    height: 50vh;
+    height: 60vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -1242,7 +1251,7 @@ input[type='reset'] {
     align-items: center;
   }
   .logo {
-    width: 200px;
+    width: 100%;
     margin: auto;
   }
   .ig-icon {

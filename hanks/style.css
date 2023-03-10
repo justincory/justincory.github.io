@@ -1000,7 +1000,7 @@ input[type='reset'] {
   margin: auto;
   align-items: center;
   width: 80%;
-  padding-top: 250px;
+  padding-top: 220px;
   text-align: center;
 }
 
@@ -1226,6 +1226,15 @@ input[type='reset'] {
   .secondary-button {
     margin: auto;
     display: block;
+    text-align: center;
+  }
+  .button-left {
+    padding: 0;
+    text-align: center;
+  }
+  .button-right {
+    padding: 0;
+    text-align: center;
   }
   #footer {
     margin: auto;
@@ -1233,7 +1242,7 @@ input[type='reset'] {
     align-items: center;
   }
   .logo {
-    width: 100%;
+    width: 200px;
     margin: auto;
   }
   .ig-icon {
@@ -1247,5 +1256,12 @@ input[type='reset'] {
     display: block;
     align-items: center;
     padding-left: 0;
+  }
+  .thanks {
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    padding-top: 80px;
+    text-align: center;
   }
 }

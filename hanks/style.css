@@ -1018,6 +1018,7 @@ input[type='reset'] {
   top: 10px;
   position: fixed;
   display: inline-block;
+  z-index: 999;
 }
   .desktop {
     display: block;

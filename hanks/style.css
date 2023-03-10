@@ -1004,9 +1004,12 @@ input[type='reset'] {
   padding-bottom: 80px;
   text-align: center;
 }
-
 @media screen and (min-width: 769px) {
+.nav {
+  display: none;
 }
+}
+
 /* Mobile Breakpoint media queries */
 @media screen and (max-width: 768px) {
   /* START of Mobile Menu */
@@ -1019,6 +1022,34 @@ input[type='reset'] {
   position: fixed;
   display: inline-block;
   z-index: 999;
+}
+#mobile-home {
+  font-size: 40px;
+  color: #000;
+}
+.mobile-frame {
+  position: absolute;
+  border-radius: 20px;
+  border: 2px solid #000;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  margin: auto;
+  width: 95%;
+  height: 55dvh;
+}
+.mobile-button-2col {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 50%;
+}
+.mobile-button-left {
+  flex: 1;
+  position: relative;
+}
+.mobile-button-right {
+  flex: 1;
+  position: relative;
 }
   .desktop {
     display: block;
@@ -1095,7 +1126,7 @@ input[type='reset'] {
 
   .menu-mobile {
     background-image: url('images/metal-nav-bkgnd.png');
-    height: 60vh;
+    height: 60dvh;
     position: fixed;
     top: 0;
     left: 0;

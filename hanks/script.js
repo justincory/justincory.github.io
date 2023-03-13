@@ -45,6 +45,7 @@ $('.guitar').click(function () {
   $('.child.right div').not('.guitar-on').css('display', 'none')
 })
 $('.amps').click(function () {
+  $('.gear-selector').css('transform', 'rotate(33deg)')
   $('.amps-on').css('display', 'block')
   $('.child.right div').not('.amps-on').css('display', 'none')
 })

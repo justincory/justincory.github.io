@@ -584,11 +584,6 @@ a:visited {
   }
   
 }
-/*@media (prefers-reduced-motion: reduce) {
-    .cls-19:nth-child(2) .cls-19:nth-child(3) .cls-19:nth-child(4) .cls-19:nth-child(5) .cls-19:nth-child(6) {
-      animation-play-state: paused;
-    }
-  }
  /* end of svg hero animation styling */
 .hero-container {
   display: flex;
@@ -753,6 +748,9 @@ blockquote {
   margin: auto;
   position: relative;
 }
+video {
+  z-index: 1;
+}
 #video {
   right: 0;
   bottom: 0;
@@ -761,6 +759,7 @@ blockquote {
 }
 /* content over video */
 .content {
+  z-index: 9;
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);

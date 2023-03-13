@@ -311,9 +311,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-a:visited {
-  color: #fff;
-}
 .nav-grid {
   display: grid;
   grid-template-rows: 1;
@@ -886,6 +883,8 @@ input[type='reset'] {
   width: 60px;
   position: absolute;
   margin: auto;
+  bottom: 110px;
+  left: 118px;
   align-items: center;
   justify-content: center;
   z-index: 9;

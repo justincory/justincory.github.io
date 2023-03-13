@@ -37,28 +37,28 @@ function desktopMenu() {
   })
 }
 $('.effects').click(function () {
-  $('.fxcat').css('display', 'block')
-  $('.shopicons').not('.fxcat').css('display', 'none')
+  $('.fx-cat').css('display', 'block')
+  $('.child.right').not('.fxcat').css('display', 'none')
 })
 $('.guitar').click(function () {
-  $('.guitarcat').css('display', 'block')
-  $('.shopicons').not('.guitarcat').css('display', 'none')
+  $('.guitar-cat').css('display', 'block')
+  $('.child.right').not('.guitarcat').css('display', 'none')
 })
 $('.amps').click(function () {
-  $('.ampscat').css('display', 'block')
-  $('.shopicons').not('.ampscat').css('display', 'none')
+  $('.amps-cat').css('display', 'block')
+  $('.child.right').not('.ampscat').css('display', 'none')
 })
 $('.bass').click(function () {
-  $('.basscat').css('display', 'block')
-  $('.shopicons').not('.basscat').css('display', 'none')
+  $('.bass-cat').css('display', 'block')
+  $('.child.right').not('.basscat').css('display', 'none')
 })
 $('.synth').click(function () {
-  $('.synthcat').css('display', 'block')
-  $('.shopicons').not('.synthcat').css('display', 'none')
+  $('.synth-cat').css('display', 'block')
+  $('.child.right').not('.synthcat').css('display', 'none')
 })
 $('.accessories').click(function () {
-  $('.accessoriescat').css('display', 'block')
-  $('.shopicons').not('.accessoriescat').css('display', 'none')
+  $('.access-cat').css('display', 'block')
+  $('.child.right').not('.accessoriescat').css('display', 'none')
 })
 $(function () {
   var img = $('.knob')
@@ -90,24 +90,7 @@ $(function () {
     })
   }
 })
-<script>
-$('.guitar').click(function () {
-  $('.guitar-cat').css('display', 'block')
-  $('.child div').not('.guitar-cat').css('display', 'none')
-})
-$('#apparel').click(function () {
-  $('.apparel').css('display', 'block')
-  $('.shopicons').not('.apparel').css('display', 'none')
-})
-$('#figures').click(function () {
-  $('.figures').css('display', 'block')
-  $('.shopicons').not('.figures').css('display', 'none')
-})
-$('#plushies').click(function () {
-  $('.plushies').css('display', 'block')
-  $('.shopicons').not('.plushies').css('display', 'none')
-})
-</script>
+
 //when the page loads call toggleIcon;
 $(toggleIcon)
 $(closeMobileMenu)

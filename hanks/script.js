@@ -37,32 +37,32 @@ function desktopMenu() {
   })
 }
 $('.effects').click(function () {
-  $('.gear-selector').css('transform', 'rotate(0deg)')
+  $('.gear-selector').css('transform', 'rotate(0deg)').css('bottom', '110px').css('left','118px')
   $('.fx-on').css('display', 'block')
   $('.child.right div').not('.fx-on').css('display', 'none')
 })
 $('.guitar').click(function () {
-  $('.gear-selector').css('transform', 'rotate(320deg)')
+  $('.gear-selector').css('transform', 'rotate(320deg)').css('bottom', '113px').css('left','135px')
   $('.guitar-on').css('display', 'block')
   $('.child.right div').not('.guitar-on').css('display', 'none')
 })
 $('.amps').click(function () {
-  $('.gear-selector').css('transform', 'rotate(33deg)').css(‘bottom’,‘110px’).css(‘left’,‘105px’)
+  $('.gear-selector').css('transform', 'rotate(40deg)').css('bottom', '113px').css('left','100px')
   $('.amps-on').css('display', 'block')
   $('.child.right div').not('.amps-on').css('display', 'none')
 })
 $('.bass').click(function () {
-  $('.gear-selector').css('transform', 'rotate(240deg)')
+  $('.gear-selector').css('transform', 'rotate(230deg)').css('bottom', '155px').css('left','145px')
   $('.bass-on').css('display', 'block')
   $('.child.right div').not('.bass-on').css('display', 'none')
 })
 $('.synth').click(function () {
-  $('.gear-selector').css('transform', 'rotate(120deg)')
+  $('.gear-selector').css('transform', 'rotate(130deg)').css('bottom', '155px').css('left','95px')
   $('.synth-on').css('display', 'block')
   $('.child.right div').not('.synth-on').css('display', 'none')
 })
 $('.accessories').click(function () {
-  $('.gear-selector').css('transform', 'rotate(180deg)')
+  $('.gear-selector').css('transform', 'rotate(180deg)').css('bottom', '165px').css('left','118px')
   $('.access-on').css('display', 'block')
   $('.child.right div').not('.access-on').css('display', 'none')
 })

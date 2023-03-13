@@ -1189,7 +1189,10 @@ input[type='reset'] {
     overflow: hidden;
   }
   video {
-
+    display: none;
+  }
+  #pause-button {
+    display: none;
   }
   .parent {
     display: inline-block;

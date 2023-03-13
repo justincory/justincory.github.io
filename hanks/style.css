@@ -679,9 +679,6 @@ a:visited {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.button-text:hover {
-  color: #000;
-}
 #pause-button {
   position: relative;
   display: block;
@@ -689,6 +686,16 @@ a:visited {
   margin: auto;
 }
 #pause-button:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
+.mobile-button-left:hover {
+  transition: 0.2s ease-in;
+  -webkit-filter: saturate(6);
+   filter: saturate(6);
+}
+.mobile-button-right:hover {
   transition: 0.2s ease-in;
   -webkit-filter: saturate(6);
    filter: saturate(6);
@@ -1015,16 +1022,18 @@ input[type='reset'] {
   /* START of Mobile Menu */
 
 .mobile-head {
-  font-size: 40px;
+  font-size: 30px;
   color: #b1d5b6;
   text-align: left;
-  top: 10px;
+  top: 18px;
+  left: 15px;
   position: fixed;
   display: inline-block;
   z-index: 999;
 }
 #mobile-home {
-  font-size: 40px;
+  padding-top: 30px;
+  font-size: 30px;
   color: #000;
 }
 .mobile-frame {
@@ -1039,16 +1048,16 @@ input[type='reset'] {
   height: 55dvh;
 }
 .mobile-button-2col {
+  padding-top: 110px;
   display: flex;
   flex-wrap: wrap;
-  flex: 50%;
 }
 .mobile-button-left {
-  flex: 1;
+  flex: 50%;
   position: relative;
 }
 .mobile-button-right {
-  flex: 1;
+  flex: 50%;
   position: relative;
 }
   .desktop {
@@ -1132,11 +1141,14 @@ input[type='reset'] {
     left: 0;
     width: 100%;
     z-index: 999;
-    padding-top: 40px;
+    padding-top: 20px;
     font-family: 'Wilden', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: #000;
     text-align: center;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.5);
   }
 
   .menu-mobile,
@@ -1149,7 +1161,6 @@ input[type='reset'] {
     clear: right;
     text-decoration: none;
     color: #333;
-    height: 70px;
     line-height: 70px;
   }
 
@@ -1163,7 +1174,7 @@ input[type='reset'] {
   .title {
     margin-top: 5px;
     font-family: 'Data70', monospace;
-    font-size: 30px;
+    font-size: 20px;
     color: #000;
     text-align: center;
   }
@@ -1181,6 +1192,12 @@ input[type='reset'] {
     margin: auto;
     width: 95%;
     height: 80px;
+  }
+  #hero {
+    padding-top: 200px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
   }
   #video {
     width: 250%;
@@ -1219,8 +1236,13 @@ input[type='reset'] {
     text-align: center;
     align-items: center;
     margin: auto;
-    scale: 85%;
   }
+p {
+  line-height: 1.75rem;
+}
+h1 {
+  font-size: 50px;
+}
   #video-container {
     overflow: hidden;
   }

@@ -185,7 +185,7 @@ p {
   font-family: 'Aeonik', sans-serif;
   font-size: 20px;
   color: #b1d5b6;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
 }
 /* focus in text and keyframes */
 .text-focus-in {
@@ -310,8 +310,6 @@ nav ul {
 a {
   text-decoration: none;
   color: #fff;
-}
-a:hover {
 }
 a:visited {
   color: #fff;

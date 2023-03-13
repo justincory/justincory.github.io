@@ -37,28 +37,28 @@ function desktopMenu() {
   })
 }
 $('.effects').click(function () {
-  $('.fx-cat').css('display', 'block')
-  $('.child.right').not('.fx-cat').css('display', 'none')
+  $('.fx-on').css('display', 'block')
+  $('.child.right div').not('.fx-on').css('display', 'none')
 })
 $('.guitar').click(function () {
-  $('.guitar-cat').css('display', 'block')
-  $('.child.right').not('.guitar-cat').css('display', 'none')
+  $('.guitar-on').css('display', 'block')
+  $('.child.right div').not('.guitar-on').css('display', 'none')
 })
 $('.amps').click(function () {
-  $('.amps-cat').css('display', 'block')
-  $('.child.right').not('.amps-cat').css('display', 'none')
+  $('.amps-on').css('display', 'block')
+  $('.child.right div').not('.amps-on').css('display', 'none')
 })
 $('.bass').click(function () {
-  $('.bass-cat').css('display', 'block')
-  $('.child.right').not('.bass-cat').css('display', 'none')
+  $('.bass-on').css('display', 'block')
+  $('.child.right div').not('.bass-on').css('display', 'none')
 })
 $('.synth').click(function () {
-  $('.synth-cat').css('display', 'block')
-  $('.child.right').not('.synth-cat').css('display', 'none')
+  $('.synth-on').css('display', 'block')
+  $('.child.right div').not('.synth-on').css('display', 'none')
 })
 $('.accessories').click(function () {
-  $('.access-cat').css('display', 'block')
-  $('.child.right').not('.access-cat').css('display', 'none')
+  $('.access-on').css('display', 'block')
+  $('.child.right div').not('.access-on').css('display', 'none')
 })
 $(function () {
   var img = $('.knob')
@@ -94,4 +94,3 @@ $(function () {
 //when the page loads call toggleIcon;
 $(toggleIcon)
 $(closeMobileMenu)
-

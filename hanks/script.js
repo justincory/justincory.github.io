@@ -37,10 +37,12 @@ function desktopMenu() {
   })
 }
 $('.effects').click(function () {
+  $('.gear-selector').css('transform', 'rotate(0deg)')
   $('.fx-on').css('display', 'block')
   $('.child.right div').not('.fx-on').css('display', 'none')
 })
 $('.guitar').click(function () {
+  $('.gear-selector').css('transform', 'rotate(320deg)')
   $('.guitar-on').css('display', 'block')
   $('.child.right div').not('.guitar-on').css('display', 'none')
 })
@@ -50,14 +52,17 @@ $('.amps').click(function () {
   $('.child.right div').not('.amps-on').css('display', 'none')
 })
 $('.bass').click(function () {
+  $('.gear-selector').css('transform', 'rotate(240deg)')
   $('.bass-on').css('display', 'block')
   $('.child.right div').not('.bass-on').css('display', 'none')
 })
 $('.synth').click(function () {
+  $('.gear-selector').css('transform', 'rotate(120deg)')
   $('.synth-on').css('display', 'block')
   $('.child.right div').not('.synth-on').css('display', 'none')
 })
 $('.accessories').click(function () {
+  $('.gear-selector').css('transform', 'rotate(180deg)')
   $('.access-on').css('display', 'block')
   $('.child.right div').not('.access-on').css('display', 'none')
 })

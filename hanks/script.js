@@ -38,27 +38,27 @@ function desktopMenu() {
 }
 $('.effects').click(function () {
   $('.fx-cat').css('display', 'block')
-  $('.child.right').not('.fxcat').css('display', 'none')
+  $('.child.right').not('.fx-cat').css('display', 'none')
 })
 $('.guitar').click(function () {
   $('.guitar-cat').css('display', 'block')
-  $('.child.right').not('.guitarcat').css('display', 'none')
+  $('.child.right').not('.guitar-cat').css('display', 'none')
 })
 $('.amps').click(function () {
   $('.amps-cat').css('display', 'block')
-  $('.child.right').not('.ampscat').css('display', 'none')
+  $('.child.right').not('.amps-cat').css('display', 'none')
 })
 $('.bass').click(function () {
   $('.bass-cat').css('display', 'block')
-  $('.child.right').not('.basscat').css('display', 'none')
+  $('.child.right').not('.bass-cat').css('display', 'none')
 })
 $('.synth').click(function () {
   $('.synth-cat').css('display', 'block')
-  $('.child.right').not('.synthcat').css('display', 'none')
+  $('.child.right').not('.synth-cat').css('display', 'none')
 })
 $('.accessories').click(function () {
   $('.access-cat').css('display', 'block')
-  $('.child.right').not('.accessoriescat').css('display', 'none')
+  $('.child.right').not('.access-cat').css('display', 'none')
 })
 $(function () {
   var img = $('.knob')

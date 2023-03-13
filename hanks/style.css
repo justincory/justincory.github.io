@@ -1033,7 +1033,7 @@ input[type='reset'] {
   color: #000;
 }
 .mobile-button-2col {
-  padding-top: 110px;
+  padding-top: 80px;
   display: flex;
   flex-wrap: wrap;
 }

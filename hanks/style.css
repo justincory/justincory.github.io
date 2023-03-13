@@ -582,6 +582,7 @@ a:visited {
   to {
     stroke: #b1d5b6;
   }
+  
 }
 /*@media (prefers-reduced-motion: reduce) {
     .cls-19:nth-child(2) .cls-19:nth-child(3) .cls-19:nth-child(4) .cls-19:nth-child(5) .cls-19:nth-child(6) {
@@ -606,11 +607,9 @@ a:visited {
 }
 .button-left {
   position: relative;
-  padding-right: 10px;
 }
 .button-right {
   position: relative;
-  padding-left: 10px;
 }
 .active-button {
   position: absolute;
